@@ -107,3 +107,5 @@ done
 
 # -----------------------------------
 echo "Setup complete."
+
+gnome-session-quit --logout --no-prompt
