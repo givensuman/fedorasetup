@@ -1,0 +1,83 @@
+#assetPath {
+  display: none;
+}
+
+#viewer {
+  display: flex;
+  flex-direction: row;
+}
+
+.section {
+  padding-top: 20px;
+}
+
+canvas {
+  width: 50%;
+  height: 50%;
+}
+
+#animations {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+#animations a {
+  padding: 0 5px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+#artboards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#artboards > a {
+  margin-left: 5px;
+}
+
+#artboards > label::after {
+  content: ':';
+}
+
+#animations span:after {
+  content: ':';
+}
+
+/* Spacing in animation list */
+#animationsDetails > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#animationsDetails > div > span {
+  width: 50%;
+}
+
+/* Artboards list */
+#artboards > label {
+  margin-right: 5px;
+}
+
+/* State Machine formatting */
+/* State machine name with triggers */
+#stateMachinesDetails > div > div:nth-child(1) > label::after {
+  content: ':';
+}
+
+#stateMachinesDetails > div > div:nth-child(1) > a {
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+
+/* Indent triggers for the specific machine */
+.machine-controls {
+  margin-top: 5px;
+}
+.machine-controls > div {
+  display: flex;
+  justify-content: space-between;
+}

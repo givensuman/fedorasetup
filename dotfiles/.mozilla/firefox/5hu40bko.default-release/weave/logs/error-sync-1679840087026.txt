@@ -1,0 +1,588 @@
+1679840048229	Sync.LogManager	DEBUG	Flushing file log
+1679840048229	Sync.Service	DEBUG	User-Agent: Firefox/106.0.1 (Linux x86_64) FxSync/1.108.0.20221024065218.desktop
+1679840048229	Sync.Service	INFO	Starting sync at 2023-03-26 10:14:08 in browser session NLuKNdzqNkzb
+1679840048229	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1679840048232	Sync.Status	INFO	Resetting Status.
+1679840048232	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1679840048232	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840048261	Sync.LogManager	DEBUG	Log cleanup threshold time: 1678976048261
+1679840048264	Sync.LogManager	DEBUG	Done deleting files.
+1679840048346	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/info/collections
+1679840048346	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/info/configuration
+1679840048346	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840048426	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/info/configuration
+1679840048426	Sync.Service	DEBUG	Fetching global metadata record
+1679840048426	Sync.Service	DEBUG	Weave Version: 1.108.0 Local Storage: 5 Remote Storage: 5
+1679840048426	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1679840048426	Sync.Service	INFO	Testing info/collections: {"bookmarks":1679839983.39,"meta":1666409893.97,"crypto":1663945604.29,"forms":1679840009.13,"history":1679840047.88,"tabs":1679840046.95,"prefs":1679839980.64,"extension-storage":1679281392.43,"passwords":1679839982.36,"addons":1679626734.16,"clients":1679839979.99}
+1679840048426	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1663945604.29
+1679840048426	Sync.Synchronizer	DEBUG	Refreshing client list.
+1679840048426	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1679840048427	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840048428	Sync.SyncScheduler	DEBUG	Next sync in 90000 ms. (why=schedule)
+1679840048537	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/clients?full=1&limit=1000
+1679840048542	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 10 reconciled.
+1679840048542	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1679840048543	Sync.Engine.Clients	INFO	Uploading 0 outgoing records
+1679840048544	Sync.Synchronizer	INFO	Updating enabled engines: 10 clients.
+1679840048544	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1679840048546	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1679840048546	Sync.Engine.Prefs	INFO	Uploading 1 outgoing records
+1679840048557	Sync.Engine.Prefs	INFO	Posting 1 records of 16555 bytes with batch=true
+1679840048557	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840048558	Sync.Collection	DEBUG	POST Length: 16555
+1679840048700	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/prefs?batch=true&commit=true
+1679840048702	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840048819	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/passwords?newer=1679839981.96&full=1&limit=1000
+1679840048820	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1679840048820	Sync.Engine.Passwords	INFO	Uploading 0 outgoing records
+1679840048822	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840048843	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1679840049009	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/tabs?newer=1679839982.66&full=1&limit=1000
+1679840049039	Sync.Engine.Tabs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 1 reconciled.
+1679840049039	Sync.Engine.Tabs	INFO	Uploading 0 outgoing records
+1679840049040	Sync.RemoteTabs	INFO	Generating tab list with filter
+1679840049042	Sync.RemoteTabs	DEBUG	Processing client: {"id":"-IwfFHV5Ky9_","type":"client","name":"given’s Firefox on root","clientType":"desktop","lastModified":1679803764670,"tabs":[]}
+1679840049042	Sync.RemoteTabs	DEBUG	Processing client: {"id":"4-Hhc9N9J_SS","type":"client","name":"givensuman’s Firefox on iscool","clientType":"desktop","lastModified":1676780556820,"tabs":[]}
+1679840049043	Sync.RemoteTabs	DEBUG	Processing client: {"id":"5158bc15c56f7690c29aa11e1f36df72","type":"client","name":"Firefox on iPhone","clientType":"phone","lastModified":1679838595160,"tabs":[]}
+1679840049043	Sync.RemoteTabs	DEBUG	Processing client: {"id":"5k4EPPY3FE8E","type":"client","name":"given’s Firefox on iscool","clientType":"desktop","lastModified":1677686028270,"tabs":[]}
+1679840049043	Sync.RemoteTabs	DEBUG	Processing client: {"id":"7fvgEQC6dNNA","type":"client","name":"given’s Firefox on DESKTOP-6CLMDAO","clientType":"desktop","lastModified":1678743664290,"tabs":[]}
+1679840049043	Sync.RemoteTabs	DEBUG	Processing client: {"id":"7xpMnRVp3eQm","type":"client","name":"iscool’s Firefox on fedora","clientType":"desktop","lastModified":1677803182420,"tabs":[]}
+1679840049043	Sync.RemoteTabs	DEBUG	Processing client: {"id":"c083a18241c482d79631bcc256a06b0a","type":"client","name":"Firefox on samsung SM-J737T","clientType":"phone","lastModified":1668655000460,"tabs":[]}
+1679840049043	Sync.RemoteTabs	DEBUG	Processing client: {"id":"oarRC8s3bk0B","type":"client","name":"given’s Firefox on fedora","clientType":"desktop","lastModified":1679630364760,"tabs":[]}
+1679840049043	Sync.RemoteTabs	DEBUG	Processing client: {"id":"rSjP0jq59EY0","type":"client","name":"given’s Firefox on pop-os","clientType":"desktop","lastModified":1677787410580,"tabs":[]}
+1679840049043	Sync.RemoteTabs	INFO	Final tab list has 9 clients with 20 tabs.
+1679840049081	Sync.Engine.Bookmarks	DEBUG	Checking if server sync ID jQiChhBsXjZK matches existing
+1679840049212	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1679840049212	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust
+1679840049226	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust took 13.853ms
+1679840049226	Sync.Engine.Bookmarks.Mirror	DEBUG	No changes detected in both mirror and Places
+1679840049227	Sync.Engine.Bookmarks.Mirror	DEBUG	Building local tree
+1679840049228	Sync.Engine.Bookmarks.Mirror	DEBUG	Building remote tree
+1679840049239	Sync.Engine.Bookmarks.Mirror	DEBUG	Building merged tree
+1679840049240	Sync.Engine.Bookmarks.Mirror	DEBUG	Applying merged tree
+1679840049254	Sync.Engine.Bookmarks	INFO	Uploading 0 outgoing records
+1679840049255	Sync.Engine.Bookmarks.BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"weak":0,"skipped":0,"updated":0}
+1679840049256	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1679840049256	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1679840049257	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Form Autofill (version=1.0.1, id=formautofill@mozilla.org)
+1679840049257	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Picture-In-Picture (version=1.0.0, id=pictureinpicture@mozilla.org)
+1679840049257	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Screenshots (version=39.0.1, id=screenshots@mozilla.org)
+1679840049257	Sync.AddonsReconciler	DEBUG	Rectifying state for addon WebCompat Reporter (version=1.5.0, id=webcompat-reporter@mozilla.org)
+1679840049257	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Web Compatibility Interventions (version=106.0.0, id=webcompat@mozilla.org)
+1679840049257	Sync.AddonsReconciler	DEBUG	Rectifying state for addon System theme — auto (version=1.3, id=default-theme@mozilla.org)
+1679840049257	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Add-ons Search Detection (version=2.0.0, id=addons-search-detection@mozilla.com)
+1679840049257	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Google (version=1.2, id=google@search.mozilla.org)
+1679840049257	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Amazon.com (version=1.3, id=amazondotcom@search.mozilla.org)
+1679840049257	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Wikipedia (en) (version=1.1, id=wikipedia@search.mozilla.org)
+1679840049258	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Bing (version=1.3, id=bing@search.mozilla.org)
+1679840049258	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DuckDuckGo (version=1.1, id=ddg@search.mozilla.org)
+1679840049258	Sync.AddonsReconciler	DEBUG	Rectifying state for addon eBay (version=1.3, id=ebay@search.mozilla.org)
+1679840049258	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Light (version=1.2, id=firefox-compact-light@mozilla.org)
+1679840049258	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark (version=1.2, id=firefox-compact-dark@mozilla.org)
+1679840049258	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Alpenglow (version=1.4, id=firefox-alpenglow@mozilla.org)
+1679840049258	Sync.AddonsReconciler	DEBUG	Rectifying state for addon onedark (version=1.0, id={2db5ae19-2e89-4a71-a5f2-da0e2bf69917})
+1679840049258	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DuckDuckGo Privacy Essentials (version=2023.3.15.1, id=jid1-ZAdIEUB7XOzOJw@jetpack)
+1679840049258	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ClearURLs (version=1.26.1, id={74145f27-f039-47ce-a470-a662b129930a})
+1679840049258	Sync.AddonsReconciler	DEBUG	Rectifying state for addon I don't care about cookies (version=3.4.6, id=jid1-KKzOGWgsW3Ao4Q@jetpack)
+1679840049258	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Material Dark (version=1.2, id={824a46e0-ce5a-4f1f-b8ba-bce46c7c52b7})
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Lighthouse (version=100.0.0.2, id={cf3dba12-a848-4f68-8e2d-f9fadc0721de})
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Forget Me Not - Forget cookies & other data (version=2.2.8, id=forget-me-not@lusito.info)
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ColorFish 🐠 Color Picker (version=0.2.8, id=colorfish@a9t9.com)
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon React Developer Tools (version=4.27.1, id=@react-devtools)
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon CanvasBlocker (version=1.8, id=CanvasBlocker@kkapsner.de)
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Colloid Dark Nord (version=1.0, id={2b042d15-e1ba-480d-93db-7c6bb24c2b82})
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Catppuccin-mocha-blue (version=2.0, id={88b098c8-19be-421e-8ffa-85ddd1f3f004})
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Privacy Badger (version=2023.1.31, id=jid1-MnnxcxisBPnSXQ@jetpack)
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon uBlock Origin (version=1.47.4, id=uBlock0@raymondhill.net)
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Decentraleyes (version=2.0.17, id=jid1-BoFifL9Vbdl2zQ@jetpack)
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Nord Theme (version=2.41, id={f4c9e1d6-6630-4600-ad50-d223eab7f3e7})
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon OpenH264 Video Codec provided by Cisco Systems, Inc. (version=null, id=gmp-gmpopenh264)
+1679840049259	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Widevine Content Decryption Module provided by Google Inc. (version=4.10.2557.0, id=gmp-widevinecdm)
+1679840049260	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1679840049285	Sync.Engine.Addons.Store	DEBUG	gmp-widevinecdm not syncable: type not in allowed list: plugin
+1679840049285	Sync.Engine.Addons.Store	DEBUG	formautofill@mozilla.org not syncable: vetoed by the addon manager.
+1679840049285	Sync.Engine.Addons.Store	DEBUG	pictureinpicture@mozilla.org not syncable: vetoed by the addon manager.
+1679840049285	Sync.Engine.Addons.Store	DEBUG	screenshots@mozilla.org not syncable: vetoed by the addon manager.
+1679840049285	Sync.Engine.Addons.Store	DEBUG	webcompat-reporter@mozilla.org not syncable: vetoed by the addon manager.
+1679840049285	Sync.Engine.Addons.Store	DEBUG	webcompat@mozilla.org not syncable: vetoed by the addon manager.
+1679840049285	Sync.Engine.Addons.Store	DEBUG	default-theme@mozilla.org not syncable: not installed in profile.
+1679840049285	Sync.Engine.Addons.Store	DEBUG	addons-search-detection@mozilla.com not syncable: not installed in profile.
+1679840049285	Sync.Engine.Addons.Store	DEBUG	google@search.mozilla.org not syncable: not installed in profile.
+1679840049285	Sync.Engine.Addons.Store	DEBUG	amazondotcom@search.mozilla.org not syncable: not installed in profile.
+1679840049286	Sync.Engine.Addons.Store	DEBUG	wikipedia@search.mozilla.org not syncable: not installed in profile.
+1679840049286	Sync.Engine.Addons.Store	DEBUG	bing@search.mozilla.org not syncable: not installed in profile.
+1679840049286	Sync.Engine.Addons.Store	DEBUG	ddg@search.mozilla.org not syncable: not installed in profile.
+1679840049286	Sync.Engine.Addons.Store	DEBUG	ebay@search.mozilla.org not syncable: not installed in profile.
+1679840049286	Sync.Engine.Addons.Store	DEBUG	firefox-compact-light@mozilla.org not syncable: not installed in profile.
+1679840049286	Sync.Engine.Addons.Store	DEBUG	firefox-compact-dark@mozilla.org not syncable: not installed in profile.
+1679840049286	Sync.Engine.Addons.Store	DEBUG	firefox-alpenglow@mozilla.org not syncable: not installed in profile.
+1679840049286	Sync.Engine.Addons.Store	DEBUG	gmp-gmpopenh264 not syncable: type not in allowed list: plugin
+1679840049286	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: {2db5ae19-2e89-4a71-a5f2-da0e2bf69917}
+1679840049286	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: jid1-ZAdIEUB7XOzOJw@jetpack
+1679840049286	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: {74145f27-f039-47ce-a470-a662b129930a}
+1679840049286	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: jid1-KKzOGWgsW3Ao4Q@jetpack
+1679840049286	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: {824a46e0-ce5a-4f1f-b8ba-bce46c7c52b7}
+1679840049286	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: {cf3dba12-a848-4f68-8e2d-f9fadc0721de}
+1679840049286	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: forget-me-not@lusito.info
+1679840049287	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: colorfish@a9t9.com
+1679840049287	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: @react-devtools
+1679840049287	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: CanvasBlocker@kkapsner.de
+1679840049287	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: {2b042d15-e1ba-480d-93db-7c6bb24c2b82}
+1679840049287	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: {88b098c8-19be-421e-8ffa-85ddd1f3f004}
+1679840049287	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: jid1-MnnxcxisBPnSXQ@jetpack
+1679840049287	Sync.Engine.Addons.Store	DEBUG	gmp-widevinecdm not syncable: type not in allowed list: plugin
+1679840049287	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: uBlock0@raymondhill.net
+1679840049287	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: jid1-BoFifL9Vbdl2zQ@jetpack
+1679840049287	Sync.Engine.Addons	DEBUG	Adding changed add-on from changes log: {f4c9e1d6-6630-4600-ad50-d223eab7f3e7}
+1679840049288	Sync.Engine.Addons	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1679840049288	Sync.Engine.Addons	INFO	Uploading 16 outgoing records
+1679840049508	Sync.Engine.Addons	INFO	Posting 16 records of 7468 bytes with batch=true
+1679840049508	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840049510	Sync.Collection	DEBUG	POST Length: 7468
+1679840049681	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/addons?batch=true&commit=true
+1679840049683	Sync.Engine.Addresses	DEBUG	First sync, uploading all items
+1679840049684	Sync.Engine.Addresses	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1679840049684	Sync.Engine.Addresses	INFO	Uploading 0 outgoing records
+1679840049685	Sync.Engine.CreditCards	DEBUG	First sync, uploading all items
+1679840049685	Sync.Engine.CreditCards	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1679840049686	Sync.Engine.CreditCards	INFO	Uploading 0 outgoing records
+1679840049687	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840049807	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?newer=1679802911.99&full=1&limit=1000
+1679840049810	Sync.Engine.Forms	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1679840049811	Sync.Engine.Forms	INFO	Uploading 3517 outgoing records
+1679840050027	Sync.Engine.Forms	INFO	Posting 100 records of 31049 bytes with batch=true
+1679840050028	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840050028	Sync.Collection	DEBUG	POST Length: 31049
+1679840050100	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1679840050251	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=true
+1679840050697	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1679840050954	Sync.Engine.Forms	INFO	Posting 100 records of 31573 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840050954	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840050955	Sync.Collection	DEBUG	POST Length: 31573
+1679840051110	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840051189	Sync.Engine.Forms	INFO	Posting 100 records of 31281 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840051190	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840051190	Sync.Collection	DEBUG	POST Length: 31281
+1679840051285	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1679840051378	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840051504	Sync.Engine.Forms	INFO	Posting 100 records of 31161 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840051505	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840051505	Sync.Collection	DEBUG	POST Length: 31161
+1679840051788	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840051856	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1679840051905	Sync.Engine.Forms	INFO	Posting 100 records of 31373 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840051905	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840051905	Sync.Collection	DEBUG	POST Length: 31373
+1679840052095	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840052188	Sync.Engine.Forms	INFO	Posting 100 records of 31153 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840052188	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840052189	Sync.Collection	DEBUG	POST Length: 31153
+1679840052401	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840052477	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1679840052528	Sync.Engine.Forms	INFO	Posting 100 records of 31169 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840052529	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840052535	Sync.Collection	DEBUG	POST Length: 31169
+1679840052684	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840052780	Sync.Engine.Forms	INFO	Posting 100 records of 31345 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840052780	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840052780	Sync.Collection	DEBUG	POST Length: 31345
+1679840052958	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840053085	Sync.Engine.Forms	INFO	Posting 100 records of 31329 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840053086	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840053086	Sync.Collection	DEBUG	POST Length: 31329
+1679840053323	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840053387	Sync.Engine.Forms	INFO	Posting 100 records of 31345 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840053388	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840053388	Sync.Collection	DEBUG	POST Length: 31345
+1679840053542	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840053616	Sync.Engine.Forms	INFO	Posting 100 records of 31253 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840053616	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840053616	Sync.Collection	DEBUG	POST Length: 31253
+1679840053836	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840053845	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1679840053848	Sync.Engine.Tabs	INFO	Posting 1 records of 570 bytes with batch=true
+1679840053848	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840053849	Sync.Collection	DEBUG	POST Length: 570
+1679840053916	Sync.Engine.Forms	INFO	Posting 100 records of 31225 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840053917	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840053917	Sync.Collection	DEBUG	POST Length: 31225
+1679840053991	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/tabs?batch=true&commit=true
+1679840053991	Sync.Telemetry	ERROR	Notification for engine tabs but it isn't current
+1679840054120	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840054223	Sync.Engine.Forms	INFO	Posting 100 records of 31313 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840054223	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840054224	Sync.Collection	DEBUG	POST Length: 31313
+1679840054449	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840054527	Sync.Engine.Forms	INFO	Posting 100 records of 31357 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840054527	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840054528	Sync.Collection	DEBUG	POST Length: 31357
+1679840054757	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840054838	Sync.Engine.Forms	INFO	Posting 100 records of 31537 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840054838	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840054839	Sync.Collection	DEBUG	POST Length: 31537
+1679840055064	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840055150	Sync.Engine.Forms	INFO	Posting 100 records of 31401 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840055151	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840055151	Sync.Collection	DEBUG	POST Length: 31401
+1679840055371	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e
+1679840055421	Sync.Engine.Forms	INFO	Posting 64 records of 19949 bytes with batch=d08a37cffa314afd8d360d2f5088882e
+1679840055421	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840055422	Sync.Collection	DEBUG	POST Length: 19949
+1679840056564	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1679840056732	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d08a37cffa314afd8d360d2f5088882e&commit=true
+1679840056937	Sync.Engine.Forms	INFO	Posting 100 records of 31233 bytes with batch=true
+1679840056937	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840056938	Sync.Collection	DEBUG	POST Length: 31233
+1679840057215	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=true
+1679840057397	Sync.Engine.Forms	INFO	Posting 100 records of 31289 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840057397	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840057401	Sync.Collection	DEBUG	POST Length: 31289
+1679840057624	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840057704	Sync.Engine.Forms	INFO	Posting 100 records of 31049 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840057704	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840057704	Sync.Collection	DEBUG	POST Length: 31049
+1679840057931	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840057998	Sync.Engine.Forms	INFO	Posting 100 records of 31097 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840057999	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840057999	Sync.Collection	DEBUG	POST Length: 31097
+1679840058241	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840058386	Sync.Engine.Forms	INFO	Posting 100 records of 31325 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840058386	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840058386	Sync.Collection	DEBUG	POST Length: 31325
+1679840058544	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840058589	Sync.Engine.Forms	INFO	Posting 100 records of 31029 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840058590	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840058590	Sync.Collection	DEBUG	POST Length: 31029
+1679840058753	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840058808	Sync.Engine.Forms	INFO	Posting 100 records of 31125 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840058808	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840058808	Sync.Collection	DEBUG	POST Length: 31125
+1679840059057	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840059102	Sync.Engine.Forms	INFO	Posting 100 records of 31073 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840059102	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840059102	Sync.Collection	DEBUG	POST Length: 31073
+1679840059365	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840059433	Sync.Engine.Forms	INFO	Posting 100 records of 31217 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840059433	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840059434	Sync.Collection	DEBUG	POST Length: 31217
+1679840059672	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840059742	Sync.Engine.Forms	INFO	Posting 100 records of 31177 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840059742	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840059742	Sync.Collection	DEBUG	POST Length: 31177
+1679840059980	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840060062	Sync.Engine.Forms	INFO	Posting 100 records of 31309 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840060062	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840060063	Sync.Collection	DEBUG	POST Length: 31309
+1679840060288	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840060374	Sync.Engine.Forms	INFO	Posting 100 records of 31041 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840060374	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840060374	Sync.Collection	DEBUG	POST Length: 31041
+1679840060594	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840060665	Sync.Engine.Forms	INFO	Posting 100 records of 31233 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840060665	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840060665	Sync.Collection	DEBUG	POST Length: 31233
+1679840060810	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840060908	Sync.Engine.Forms	INFO	Posting 100 records of 31689 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840060908	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840060908	Sync.Collection	DEBUG	POST Length: 31689
+1679840061121	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840061242	Sync.Engine.Forms	INFO	Posting 100 records of 31625 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840061242	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840061242	Sync.Collection	DEBUG	POST Length: 31625
+1679840061516	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840061565	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1679840061569	Sync.Engine.Tabs	INFO	Posting 1 records of 594 bytes with batch=true
+1679840061570	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840061572	Sync.Collection	DEBUG	POST Length: 594
+1679840061632	Sync.AddonsReconciler	DEBUG	Add-on change: onEnabled to {2b042d15-e1ba-480d-93db-7c6bb24c2b82}
+1679840061632	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Colloid Dark Nord (version=1.0, id={2b042d15-e1ba-480d-93db-7c6bb24c2b82})
+1679840061632	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: {2b042d15-e1ba-480d-93db-7c6bb24c2b82}
+1679840061632	Sync.AddonsReconciler	INFO	Change recorded for {2b042d15-e1ba-480d-93db-7c6bb24c2b82}
+1679840061632	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 3 {2b042d15-e1ba-480d-93db-7c6bb24c2b82}
+1679840061643	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1679840061811	Sync.SyncScheduler	DEBUG	Global Score threshold hit, triggering sync.
+1679840061831	Sync.AddonsReconciler	DEBUG	Add-on change: onDisabled to default-theme@mozilla.org
+1679840061832	Sync.AddonsReconciler	DEBUG	Rectifying state for addon System theme — auto (version=1.3, id=default-theme@mozilla.org)
+1679840061832	Sync.AddonsReconciler	DEBUG	Adding change because enabled state changed: default-theme@mozilla.org
+1679840061832	Sync.AddonsReconciler	INFO	Change recorded for default-theme@mozilla.org
+1679840061832	Sync.Engine.Addons.Tracker	DEBUG	changeListener invoked: 4 default-theme@mozilla.org
+1679840061832	Sync.Engine.Addons.Store	DEBUG	default-theme@mozilla.org not syncable: not installed in profile.
+1679840061832	Sync.Engine.Addons.Tracker	DEBUG	Ignoring change because add-on isn't syncable: default-theme@mozilla.org
+1679840061833	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1679840061835	Sync.Service	DEBUG	User-Agent: Firefox/106.0.1 (Linux x86_64) FxSync/1.108.0.20221024065218.desktop
+1679840061835	Sync.Service	INFO	Starting sync at 2023-03-26 10:14:21 in browser session NLuKNdzqNkzb
+1679840061835	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.js:54:5) JS Stack trace: LockException@util.js:54:5
+throwLockException@util.js:138:11
+WrappedLock@util.js:152:15
+_lockedSync@service.js:1371:6
+sync/<@service.js:1335:18
+WrappedCatch@util.js:123:27
+sync@service.js:1336:7
+1679840061835	Sync.Service	INFO	Cannot start sync: already syncing?
+1679840061849	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/tabs?batch=true&commit=true
+1679840061850	Sync.Telemetry	ERROR	Notification for engine tabs but it isn't current
+1679840061977	Sync.Engine.Forms	INFO	Posting 100 records of 31173 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840061978	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840061979	Sync.Collection	DEBUG	POST Length: 31173
+1679840062149	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56
+1679840062213	Sync.Engine.Forms	INFO	Posting 64 records of 20117 bytes with batch=d74d08cf9c984a07927530fd34eefe56
+1679840062213	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840062214	Sync.Collection	DEBUG	POST Length: 20117
+1679840063666	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=d74d08cf9c984a07927530fd34eefe56&commit=true
+1679840063758	Sync.Engine.Forms	INFO	Posting 100 records of 31105 bytes with batch=true
+1679840063759	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840063759	Sync.Collection	DEBUG	POST Length: 31105
+1679840063974	Sync.Collection	DEBUG	POST success 202 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=true
+1679840064043	Sync.Engine.Forms	INFO	Posting 89 records of 27710 bytes with batch=ac3a3c64cfc0445799269de0cb7c975e
+1679840064044	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840064044	Sync.Collection	DEBUG	POST Length: 27710
+1679840064487	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/forms?batch=ac3a3c64cfc0445799269de0cb7c975e&commit=true
+1679840064488	Sync.Engine.History	DEBUG	Checking if server sync ID 4lpyF1MPPhkE matches existing
+1679840064495	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840064616	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=RY-BPWLzkLIl,lfiAd37krm7C,u0hnO7saJeLb,sEyQASN_0E_8,0qMF_5_j8UHu,QdiK1Y3GboO9,f-JMcl1MQoA5,qww6uaUbOQu5,qxUrXgY-0X86,rx_B1kuJDjxY,skNduJuCCCt3,z0WPqx9eMxGF,RiFSyFVQpZhj,XJ2wi08RYhKi,iVkFgTxAWlgP,ZWK5jdI73ZpJ,cdxOnbqjWdrm,J8YVctSOE2Gf,MOQdVckuoiUd,VUWlXRcO2G88,a0s4oUCECaJ2,bNPbSGciBm9R,erpfmjpES801,iqyXSudqoHA8,oM6opnnUg_vU,R5Euusb6rdBY,aYaH6TeNfY1e,k2DFVWxIwgp0,-Hyf-m1ukoFr,40E3nv3FzBMP,GXvoFkptdUeG,H8g7xvuQzBGn,NEuquMPo06bm,SZxMZ8_PMxY4,TYcbR31GxEzc,WfcaA7t-m6mU,WsIDeddGGNxy,bkTQsc1CUSMh,hIGIG4xJEXa3,hWc755JRIP5i,jVeJUaP3-O_g,pQ5kDCuspv3f,ss8LTI9eXu3H,ubQoiPlFK40l,vaLwfMASwOCX,1H_D43-S59Rw,7i2hjkzM6fvT,AUTgDEiPRdC9,PbEetGJiMj-G,SsN4UH3Bu9Rb&limit=1000
+1679840064713	Sync.Engine.History.Store	DEBUG	adding 46 records to history
+1679840064788	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840065007	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=U2RPB4DDjMX5,U6lYgOhgD-pb,UFRz7rEDCHa3,UWJ3CFDfLbpl,c7XP2ZXYZQVw,eiIy_Y0DfCGa,qHy3IIe74yTT,tNXKUk90ZchX,vqWrvdicBXrj,yYcbqktFQzZI,z5359pFmaeDJ,pA_geTBIBgND,_sVBJH4VgRpf,agxI0Lw_UPHG,n3eo7v3kUbBR,R4qWflocJ7MH,WB4RqgAni6mn,nfZVDSxIebHX,vYn7YLKj5Ze9,zy8BaOHFDxnY,Se49MFyEvc6S,XhrqBeAu3iQ3,p1hVKRprJ4TT,-QG_uWIf1hs8,2sIwvnl4_jFl,EXriLl9phPnQ,TluPqWh6fZQs,Xrj-eefYBvbg,gOMhYhtTonBp,jTgxkeu8pOLZ,m6iXKwIIETjf,sjAu0DGF9usi,tXpv0yzYcNnr,MfoXshCSg3Ti,QHEuTXVsE3ow,Qh2lbykJrQRE,esOBrKeB4WPQ,PnVDN2nkekfd,g5I7WxGVFETW,uRsy5hUUbEU3,EBjMEOuvilJA,S_lanZMNB94V,bCXSnj1NRv5C,Uh-VLUTrfRiK,ghZ4ZgKkZvl_,iCuk7Ibfog3A,pywhZK0OtZVC,riX9hZ_vix69,bxsKKvK0Kw6C,di7MacB0ocxy&limit=1000
+1679840065071	Sync.Engine.History.Store	DEBUG	adding 44 records to history
+1679840065194	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840065313	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=l7gkAQxMrRAO,rX8-HBAy-E8n,kazELygS7EMi,scOg2NkqVgHH,4wmoorYXy4p1,Y-JUnwaMWdsi,YsPFje1PXuY-,d7_8eB0JRgQP,e2Y3qsumSONR,hnG5Z4mVKRME,hzH5LwGmRmak,qcfoebHZfsJy,xu9TKNvWmR4Y,S3BvrhsS8GaJ,_X9mDldhyuX2,g3XJlQWHzoRq,i-Q7OmFWNPDW,l_QRLQ-XQOTe,ncDCYbEE11jQ,qmazqSnsQ_gn,x1jfj2JdUZq7,xHnEt7z6zuxF,UxLuWaeHaOjr,btSSmrw1GwhP,cbtVeChjsGgy,keYb5G_kxKe0,mBcWkRYBWfaE,yyuijo7clXd7,gr4ytEWjxX0L,s-LNf23sKgsd,y3mr2ni_2GGs,zDCOiw9Zh_gi,zwdvKn4C7tVU,Xbbw-3jU51sD,YkMSXwgD5AwT,oCDjUSm991iQ,KP2VRhPkySh8,S2TEnAi2pg1P,SjnVZMTfh-vX,Tbdkx2BXuEyv,UopLUuL8VadM,_NxJHEqbavFH,fRTnO8RnUURm,ficKUU4l5bdh,mdZlVF26d0Mf,roVf69sJIQKQ,tEviBw3Un_wN,wuk8SLq2QfT7,xs8qUFk5iqZ_,3-hQRfc2Vw72&limit=1000
+1679840065371	Sync.Engine.History.Store	DEBUG	adding 45 records to history
+1679840065464	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840065615	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=YvhgmXVR0LFN,aX8f8r9bJmbR,16CKvSAkAkBh,kcXv3jMKqONk,yJ_ORzRpCYCW,-dwwo1cf-Evj,Gv_84cMLMyoX,RirilYzLHg5h,Sb7KrUg2s6WW,U9l3y5Fk4qxk,UUAlQ3_enr8E,_SkKYVtetEAi,cnBZYBztTmD1,GrVLddOhV3x8,qs9MxoBulH32,ZACim1_e7NbS,sxAgma_C9gxx,nWkBZe2jlVPv,aP8i6kg-CYXU,X0C4PEClCzfk,VtjMdPz145T-,ZGFOKxpWYV_c,df17QkAk61WD,lRtHTTmSUpb8,mX88FgdjkjHp,mjhkdUFtvQgm,nG0vkQuYZiB_,Pl7wMbmxJg-u,pp18eaGsblEI,RlcWeHN4YfJe,a3bupj8ONTKB,259tL4-BDVw1,FgkZvScT5JkU,M3l5ytELHyK9,MQchbkZrFb47,avbqK9zB7W6J,jy51z6UBjMcZ,n7B748owvPkJ,01SjNMPgr44U,CrxsKMCwEAP_,ZvU8PbpqyRh3,e0Wl29Pk5o68,idzD5Bhgl3Pw,jnH8c6GmP1s4,svJqArYBOxd7,uYGyAcKkFeeU,wLJo2usH6Cjq,alPcFVZaWK_G,cPfe6mx__XaY,FvUm9PGb9HMy&limit=1000
+1679840065659	Sync.Engine.History.Store	DEBUG	adding 44 records to history
+1679840065715	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840065923	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=HiiC_OQQI3-z,KE3YdPGPg61A,U6ycvnB0fgwd,mUE65pytxarn,iSdroUos76Yo,Jx40x6W-uZRC,kAXJVvsCYcSx,Ho7F0q-ikN43,pljdYWe3kmpi,tVdoKCd6R_S6,37V5m91QB8lR,3FQw1f6nKeAk,3rM3EESCjHUW,JTqJHoNoMi66,P2D84SH4BADx,agwDUhgNEkqB,gzFKZ0FmiYhr,iQt7P2zehI2k,lpf5clGAWich,zoMgzvcX2xV-,0UAq9Nk8965s,5dgPoLn948et,6FVSMkzjK1aT,Ccwuy3qC88zM,ChmafQB_XeA_,XHPErB0Q4oAQ,_H5QF3U6lKMw,adE68KadybOG,jqscWKa8QY7a,lu3rddum3sva,37YHm_lnpB0D,6KLHzKoteUM0,9TPRjwnSpFgt,C4tuPIRT-uxl,CaHKO1rN6aF9,HqjYHV3tyeyq,HtNa67-C9m6s,MB0WhiQRtRt3,NlbQtD3gHo3b,ORuIFnAspoi_,RZEvTp9adsCg,WHfnVVQKaAus,Z0Oil7SByKgC,ZCS0N-RXrQCh,Z_FdleKh6ZvA,Zbqrm95ABFs8,lnaH16fh_hGT,n5HtaHHVAQcp,nLMW1njnMVab,q6Pclo3M08G_&limit=1000
+1679840065970	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840066054	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840066174	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=rc-5-ltloll2,v9mp0Q5c3iPF,6kDd8m_ViOJQ,LavCauKyw2ul,_3jO42uG6Bnz,dZjslg6bynI0,ik7mhCjYNp4O,zY1Fqb2oVLF_,8MtpiSJIa1xp,K_K2MnvcsM9W,Nk2w0KGP4rpS,cdf_I98LbTKJ,e-ar0t4o0cmT,ec9VDpda2Wtc,ms3ts6BUtTGy,yP9cSrdLi-Ic,MWZP5h8JMH--,NNq2LthN33s8,Oly6DqfZM8JZ,VXrAVdQr_IIf,ZCHveT12bNuH,lGzVHkC8ehI0,s5mB16-jDxOk,sOALORcRtRzR,0P8PeObnlNEe,3iisg31oozhK,9Vl819frNCnL,D4j1gn1-zDNQ,FKazQImBMSs4,HDJKgP9i5Fzs,KGPXhTCMdriK,RAfuH4GtZfRD,Rd76x0cySoly,TDBRKFUf6wW7,VETeT5eaPewO,avXKHF5vGjgx,bfWi52tF59j2,nA-jdCIWu9Mx,vrbJDaBF-zTj,3FyxNsKJBHPL,3Ka9j8oArRFh,AXp9DOFrEcN_,AfVSaVEyQeHM,PMqg65bkvl0Z,QrGWCs2lJUNY,WxPi5uSxJWb7,bWb1dgZu6r8S,lLleYfzv2cCt,n0XCXqoirjdD,p2GMOLYjL6Xs&limit=1000
+1679840066216	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840066293	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840066539	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=wmrMNAmbpor0,0a8KxN17aj3t,Nae2Ad0ZJ4aK,Q4hJM5mYCkzg,X6kkbQTKGXlE,fQ3dAWhYqSL6,FD-bDnwKN9zj,Nqt_NK7_x3UF,_zm7_QAVeGsi,m_hoH9rDDbOS,s7U7Z_u_0Sek,uooqCifVaw7V,xyLWssn9GVlI,-8PjX746BgTN,-L0F3e_3I1vE,3VAwpBhnTpna,9RwnpEIMRnRp,Af4aorf0QlXA,FBS4eNBJVCDA,NZztrNvTsaVP,Ooek9Zvj3-7I,SDtQ4rtM_Ry-,jr-WN4jWulLL,s725KpmsizvT,sP8gyD4TrZWU,wTwyD10T29zQ,7naKLZNy0I2M,By9_fRQ9yg6q,OIPcQNLDfsNb,kkUI8pLVLjzp,RKbX48vSDxnD,cEBHBqocT2EY,dPoeo9kvdtjT,gTqH2bRQsnV0,kQcFTPu0J9vW,uswT1YejrEZf,1rC28byrubZG,nsQSa0eQzCSo,pvFn6-b2VFgZ,4CjAHHwga-4L,VBF_SA6Xf9A5,VCcYoGco8_rM,jiDScrI7iIfA,-2wFmWaZ4UzH,-EqGj54B5gyG,8mkkal7OnCAq,AXKX1FEGLHG3,GcM7SI7ZsWNS,LsRU43UhyJs-,MoB5dxo17Hhu&limit=1000
+1679840066639	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840066723	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840066944	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=U-WHed1oAqZk,VJrfb1hj5HBA,ZIhzg9cls1f_,hj1qge59a4tN,i3Zgz81uYocT,kCx50SRM7idB,mYxpEeodO_1c,sekEoTvWcmiW,wH92dmA4xwJU,1wbvXDvuKEoF,5QolvaUigp3x,7ZPejfpKGIb_,C9X1ADaiiOvi,CmymrcI6Ndbn,DD21RfmyX3Gb,FZ7flADeL7aL,G2CXq0LA-Tty,Gf38iJbtFtas,IrFzlcQFR_ls,KDUzrMjlSGdr,MxzMTkE2-93Q,NBybzvn1Vrfs,RlaB1DuzuObH,TsVtaYAX311c,U0afCzXWpFnm,WR9QmURgxFMU,XyPZqmiHXLNp,YW7LSmwPfAB5,ZfA0tgKfIFZW,bmtCr7B4B5l_,dViVaSrW7iZm,dXzgB-bERfyz,dzjTxPJKsnB0,fOclBy2QPzbr,iOcDnuMO8upY,mH5KVaxXu8pQ,mjtKVI2RMkIH,mm9NjE-aqknW,nCN-RPm9TIvV,qoJBq2Ay_52a,tHDYwsy4rOwT,thbSiNw6Bgx2,vs-oqfOnU27P,xEialyzJbAOw,xPN6zHI5VKq1,y04-AnC9Zaa5,z3hzbJrazEzf,zI-ww2bXTFqg,-zRUDjeBEIj8,mjxVTXizf2mb&limit=1000
+1679840066994	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840067076	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840067255	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=sLJyhMB4NIPb,wuuwXNtvDcB3,-lw_WOeU9x0f,E_gw6O-crbYf,MXbfQb0RFPaA,U1N2KHa6de5C,Ucafvt-2-nWy,bJ9-zjdhjY-V,cHj3YlKxSOS5,cvBbvTyIUBfh,g-g9uYFgp4WX,loQ8eyVPCdjB,tlFAMfISuV0b,-yRKpx5tkanV,IVhMohUHZY7t,Jztz5TaQg1IE,Mkk3mH4DDEbv,RNA6KICVuyhh,WUG9wVIBY32a,Wjda4zYftiLs,Y8OJxx65h2WG,jB40N3QvRnmt,3ejZQtO6733v,7AQMYkeqET0-,CcUgQvEKqJId,ICDHjatxmdGm,KLKC0WvIFDNP,KO_L0eG2oNB4,SqT-gjyfHdGi,St1-jwybXXkY,dFbK0KKP4L6C,pBRTq1rahsuq,t0dWYMXMEbyJ,v_rqPZ3yuA5H,29xHzlAyB8ZK,2U6yjXoner-H,AsCdc7ERt1Jn,NzsKU5S7x9SC,R2E8AosIHbkD,UGXvP2WKeiTF,V1xQ5RMAD6Nw,g4pXKRqQ2KWJ,hU-sBICF4KU1,ibAY4OJ7W56_,ipirRKhKJtOU,ndzxq8nddUIR,q_NaqH8MquXA,sVA5KDqQSMQA,tm9Bmuwk_dvt,0CRiFzSQ_d5Q&limit=1000
+1679840067298	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840067371	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840067494	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=4OajQjuAjKOV,ANQCjGjoja9h,GoLPR2nMS2zZ,LZDxZp-kB93q,MVFXCfXY_6ys,OAuD5LPCZ8YQ,TtxIRX2kmShg,_DFWQT4_C_XB,jeQO649VXjzG,w12M7u-n_EkH,x73zlFK0KU_C,1RetqGVTd6_3,5CCnkSEzNRb_,7KkeAnORxW02,7xj5L4zsVFy1,8b8oQOYffdes,Ak0A1LGf4T99,HYTVpUAcvyfV,OZx1mXhT1M9F,SD-Os7sxVPUq,SY2niSwV7xrH,Sg06l8F0aSNU,Sw_aNP2A5QwH,U6hzJJ6u3qcp,YC8aD-tcfJdm,ZyFieZRTfUyb,fbYXaWhaK9lr,heWaivsratvX,jYNL_aCpkfQj,l3YS-maei-HR,mw7tUmu-XttG,p-A_GE07-spA,sCM3A6fVOtm-,tMO9EK4UjOrO,y5GOzSAaQxVQ,Frkh-kuxcjSE,Fw1qjQsgW2bv,ObghPPagKh1O,-vYTWs8FCfLh,6GjhDSo3NOQB,7103acra19p8,DPewt72rL205,HrkNRksQZSPT,KEbK8CicxSMf,U96KpOiO-mYG,_RjVdEQOHNwZ,crJxrCxnY7pJ,tUEE0If7kqnB,yFNgkWAhZMjK,BsHup-bINoLS&limit=1000
+1679840067540	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840067598	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840067720	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1679840067730	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1679840067780	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=IcX77BQtudkf,SEOimnB5QHif,T_wxmp7uOpiW,UNU-orBjLZYl,ppbtgF0EMTEN,xs_5R1cxMTAi,ypxLU26uGZA5,05PpKM9Y-dEd,P0XKTkCwKN8Z,V4LxhXCh_R_-,FwQaa519tNyl,IYYFiktgrlbM,Jf6zs8UBm_gu,T29gdnmQ6tQs,bC2QwbI8Mcy6,dJLzQqkRjOGd,eOl2YKiwIiwm,ekeQEzNCe7-M,uZcY_uWW6FFY,Dat7-Y4chR5d,aT58tvAX61WN,uFDHJJ28f3ui,5whchtozOpx2,MfDnh2s68OBV,NXFiuEa_h5FS,Tg8PU8yBU66W,UGaQct9gQKxD,VFx7PhwW-0g4,_5NKE4Jy2Ngq,kq84es8OY4Ui,nDxdc-MU3g10,9zibG-yKg2p4,Fg6LY-hNJFg-,QDmKB81YvuZx,Xy_gG9DpQ1Rk,t8jY7LwzaHgr,08gURoBhMDZW,9-Krrj2cytkp,AnFvEEKQYHjB,NfuzTXnXzKJO,er7Q3PYoKf2P,o53fpVJULDyn,ZrCJmqcRYwq2,artkf7mc2LO-,rj9pORMiVRdB,woe7NdNbPdPw,LV1w4mW2jLXC,UDO6jUD6ltpR,Z4YjOUkWGDxn,qtuX-2-zIsfF&limit=1000
+1679840067790	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1679840068084	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840068165	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840068299	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=z14OpnpKpmbJ,zgcfo0XL0va5,gN1U11VVfPto,wzIu7qSEMGzw,3CCrAqvfD7AA,767yr5Qh5tEg,7JMJNaB8e8GJ,HmOM7_J7GK7F,Vj0Mfhuk51SI,WaWhmS3F9flN,XKa336OIcCTF,eIMrbrESmRAh,fgzZAV9Jd5KE,qfnA_ZjBw8B0,v_rvB9dBw-J3,TRos4BKQupeO,VQRhgySWqeww,TCs2SF647ASd,82LUTFKYsXDV,v1wWyn9HJ1yj,wftm3n_srts9,3tx-I2nD0BlZ,8kNShsK-MohJ,a5B3d_ZU2UJ3,1-K4PPR0A1K9,33z9GqcVc0Id,65e1RzM3aAmt,B7SquBIwINqS,H09qrLL3goth,P9ZDB0WWNyz5,gRhpKrU0cs2Y,ldZ4XdBIoZp6,vljCWMsvhPko,yecwChxRq68t,SNzB51pDh-Eo,TlvsLFfTG2zP,kVrfVVNO8u0O,q5RaztOMXNJl,HfG01McPwW-z,V1Xh85MbonPR,jF08uhEMji8L,nxOq7eEMoSg8,23CLI_ET8BoT,6kdUiigG4VQk,9vLUNkf5kNIv,AtmrS-jADe3V,PnNEivXq66TF,UDnpe_-1ALVQ,gXLAi2H2Nokh,xYvVzJG4-zFI&limit=1000
+1679840068387	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840068469	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840068687	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=ymBiu2S8O0QN,0mxWYX6uHtGm,E-9ZJgSpQLAk,NQVaYqMsFOHM,aZ9WtwqDkKzR,dYfwDwb2NSXj,d_wpqVgmyQz9,1WHmnTMSPyc9,d_KH6b2d7rt4,daYTAJX_yfuM,CUc8fn-ne_Ir,DvDDOVicnO5_,H59nHN8JHJeX,fpSSDDVfjmV4,i7OzP3sfwcEh,oSlB30dchSBC,B9_mBeB-nrcJ,EOiuYbo6xLwj,EpAgGzloIsCz,O7IlpomwucJC,OncX9E8P_NEy,YJuIBwgNIjvv,bXucBRHjokn2,ixlMisPV4z_O,q0obbHS9eT_X,6I09fK6dzfI6,EEt7OQ63aOzP,Fo53G5GEnJMl,IiddTBPuHdS7,SuUBAI8Au0qE,zYmXd3f-HL4C,0ERW0o8htqFL,lKHnXZkdYwWY,m5T-HeWSckjC,tkXjqrZAEBpB,E-bcVDDc0aJ9,KSjJtnV7yB6r,-Hr8z-S8oVqU,RDWcdQHVtx0m,SrcEHveYJfQT,Zlhp-c7QscXj,uOHr3wW0Xywc,w3x8y1dAo5Ti,-u-afr4O8fLv,S6d4FKPt73Rz,tR2JM6ZorQd8,oqJhSBdOwbuy,2822c8vTx8op,LbgCt2ql_5Oz,QBPhcPfDnNh2&limit=1000
+1679840068737	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840068830	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840068948	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=WhtzcVQOMbPg,lw9G1jI0kO2T,tDpBOKDoJVov,6nYKMmXJSNGK,KIZMcby8E5JV,OIboCPcs1Cq5,b27mU8GYTHjK,djicMx8885ja,i8s9OUJ-twMy,l4mzdlMvQMHt,rXhYT6tGQ6zB,-Oiu2vPgnHe9,05OzCdmKQGtw,15RNDCC_untP,4n_xHvHW-FuR,BqlJ3h_R8xr0,El4dK5mpnsFv,FNqOeRv5KAqg,FkWkkW6Dka3l,FlAUmYZFxHtm,JOFJF6xO2_Hl,LPyHgpJmsbTS,LlzQ-0-hD8xr,TG_iNFzexqNs,TN10sVGZpbQ2,XBY4ZJ-HB30W,_pLAt-d-uBxa,aDfmd5IQoz13,bZMM3P6yHL4x,eBMW-lalZRi_,eENXVufkHpjZ,f2zY3PQgWcoM,fMYjCv2xfC3A,fW2pkb4fvJdd,gu1LMlmY8WeV,i6nutHd2J7G7,l6rncyfAe7SJ,mIERrsO0FbZp,pgpE3C32E1Fp,t6B9zt79hpLx,tXqqXjSeyYwW,yryhiuY5T-QC,zwXCcBtFZtYz,--2Dz21uORPE,-hXEk6vLPTrW,4hN8PjJeb44P,73ZgAA-pDi6v,7iSZxqZtKkNS,DurEVgYnuB0t,EGFG6B8siXIV&limit=1000
+1679840068993	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840069063	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840069300	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=PetMJyu64Ddp,RMw0xQMAu1o_,_UtBQR9klWza,azzGRpiUl8vN,cHoIjJy8MWHE,eIA71UjD77vS,iXp1CykCX5l5,lxLEyCoc9mq7,yvLrq18JZj5A,amn30olKbiPL,c_FgMoPEFJ9j,gDAhSyxdEpix,7c87z7dI-E3H,5seUZ4uYk9jf,8JvdXTwB8ngt,OEZiEd5ehOAe,8LKWQ3Mj_b5S,Fq7aR_z6_eUU,NUoMyCNMFl6m,R-W7vl9C7XYG,GR7d5bRX6ON8,Z7Am1u85hGjW,VA3oqhtReb9b,iihn3sKQiSXl,xEAhp6OG8hyp,AUDbWu-KZSJ0,-0ZH8lEvESfI,X6PCt6H9ZrFb,boMkGuqcqnNn,tX1vbMFwABdC,ttYBBX7vI5Ft,aU0J6JjjlZpd,-Vu30b9nRMwm,Pp3xOpRgDan9,UJmXc21lPdNM,gMnLkiTosRwj,we5vdfYOJs_4,0UKUCfbHFcmT,34ewmWP2iZwo,6-DP01VN0HSQ,E0RVG4C4dWPg,KnmO0ZJnMpAj,Muhtq-Z7fxTu,OA17pdqtppjv,a8-BopfEFntS,jEfPMZk2snPv,jjMtjWp21Xdi,jvxZgFka3-ZI,lAtLd2maedQM,mMrfnY5rBlww&limit=1000
+1679840069376	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840069475	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840069613	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=qyc33Hqnz4jm,34lQGJQd5Ojr,EprlA6m5jI_W,Eqr-nDYNlqgQ,JSfN9tcx0AKD,Swok9faa-gPb,UC2PTK4USzDy,YaZNrKlJNeRu,bV-O9d9h-OxN,g0rtvxIzJdow,mfpIVaMwDOvx,psdFxwcbrXcN,v32FuC7rpx4p,wNAN43am6xMD,gWkUdl4H3g3v,4gtmNpjFuySS,6XIw-73X33cL,6uH0uzNljxgQ,8DGJemLRrpbr,E4iFWSojCjzP,FLpv8-J8uJzW,HofdUY-GlM08,M-iPU4874Js_,ONR9sTOT9hrz,gcC8yX-zJhwC,jN28jz1TYjPf,yvEBlT2hkcOh,znnRLge_KVgy,AghYQ_GYf3P1,BMSLoxiqeS99,ECtNM3IdD14u,N4MajmnkF_ip,atL4zdp6oToH,cGJdR0NN-2xM,eFykflsooIlp,jHZpvRWYF9rM,tkSZeWw28wkL,yXQWrK4U1UBv,1PYwQxWm2kXR,7FJQip0qVOCm,8CZgfNSHvtVI,APnDQ6VpoFIM,DIVFgN3I39eE,E0x340VhVMVy,EV4Yi5nRj6lj,EfNDjBgQN7Cw,GCuIOfZoxPT1,N2ai1byxN2Dz,WMAeRvWwuD5w,cBVtr8OCuyLc&limit=1000
+1679840069673	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840069741	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840069924	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=cfVqgZjLlI2m,hYrKV2vL_rcO,ocx_pz_GfCda,oz0t-53mUyIW,qfe3ekdpRGVu,sPf1A6TacuaJ,vZ7GopicnF99,3lsOF_wRXxzW,5sNC8wCvF99a,7tMiHZEcgaaE,QjWJBAucseeO,VVUnFIAcqwjI,jJsoW3qt9Mi3,q8Ny_RFWBiyk,tlNyM7LJdVXy,vwrnsJ3z5UQZ,HbtuGGb33_w8,l9zn9-SHlc-c,0kS51iX6oJLW,3ue4hn3c7jII,ILzEPRyF4_Fd,McYZkq4CgGBV,ZPvBx121Gppl,qM26dmCkBcx6,37Q-EI-D03T9,HluX3bvG3e6X,dE05fZyrqNJ6,xRXkqRl9JT6S,Q91ymVEK4hGJ,k_FOGP5JcJyY,5UGclinlwnQg,A1V-iRITgRu7,A0pYVmGOL4rD,-0ybX62sAPp5,I3j5vGalHzYS,OKC-KXgxsbV4,UMKMhlECFTf1,boUteHUWrPEm,glP_bogX4qzt,hbky-OKzKvCX,q5TR488zQ_tu,wx_gNGgGACPe,68LH305U8Qus,8gdpdPCY9BuN,EkXMdiS2Zq5q,KW0KYdByScjU,THGtsOI3xgfC,bOo0x02bKraG,cKmakNsHLYpB,eznSVMgqblK8&limit=1000
+1679840069985	Sync.Engine.History.Store	DEBUG	adding 48 records to history
+1679840070077	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840070201	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=iM2TFoGQzzqL,kAteaP6H-xKY,ltxbhsWCYGrI,myADzsY5z-sg,psXvflkQhvNM,q98vhRr1bZ7L,r0vi9F13w_Lg,vU6PonR8U9qk,wDbMxUTuYmqC,xQqxjO_xKet5,0Zk_jYmxznSG,1f85GZ32v0--,OizuMTCK9WWe,Oxjogo_VOQC1,cX5KTHU6NTwB,j3Dmxv-FlhSj,wmIRrtVVdPMT,HkMK_BGO32qA,iJzgNULE5Abh,ZhIr1f1mieIS,AdQRHcLR5j-k,2fKxm_y1bnNt,2gxq1CktvNuM,AzZULQXb_nVP,Hctz0REFaKFq,S-ioBQkEqeUt,_0yOpaD69R0m,seKmu_MXm_Je,9-sF1gG9J8e9,LeAXAF3KR1x7,WjfekBttEACF,XlA8ptX_irvy,w77j_v-J6dnv,08M_o-M9pmUw,9x4GHPtWKOb_,r32w0cgIYG-A,w929YmiFv2SU,rx3DPTymX9O5,1Rp8snLgsAlk,3jzkGlqyFpG0,7H5dOODF2gvA,9n0837erqlsq,FFZTNHZp6G6y,M8Vy6iBqhby2,TX7mmTtdgHUE,atxuIX9tgZIe,juWs1MZZOBWz,mDb5LwjFPiPH,0V5hpRjEz1_s,5nvkDZ4RigQx&limit=1000
+1679840070251	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840070319	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840070449	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=DANYXbSJ2rO1,SxT3JAeYehaK,V5sl3PQWzuUZ,W7WEqRx5rOxT,X0gdnTvGYq5W,ZuAAsH-Rxaoc,h8JcSnr_PvNU,syhqyzWjV8Tq,U4HJ_4orwzH9,_gB-_RE2vKHK,xEmLi5lTS1iA,2NAIhG5gM5lz,Oanrqg7vftxD,TnpDXHbs9hj7,_7nDZZrUaKTR,m6Rz4oh35Lpc,qixwE6Le18IN,yoPMBYxIh0fP,49OV8qpuywnw,4LMCT6EDA8wj,6GKBJgUgrblT,6oBiJzKBCcNw,EpV3-8ImXFSI,P_MjFZGt_p9q,YQC_7bsm7ErE,nbH8Prx2AL0w,1eWaozIOAhmN,5XqD378glUvn,X-0xNcEcWm5b,xWMl-VbgOhEP,-9tFn-Ykyhkc,-Mo9z8lG6VMz,49HiCQNhtCCF,7TfHtvRtXBkF,8J9WzDEE3P5-,8yJH7VHD89qC,A8RDoxla_RWX,DIy--0xhA7QE,GyHY-ly4WZxW,HFeHRsWigyz6,IJaGpP1SH8d9,Km3WTPE_W25p,L7hkAAR6UCeF,MiLFRxMK7Pvr,MnW9DE3Txtjk,RIfGw3kt34gn,W1TVuNihWYeD,YSmByW0-JwMu,cuOPC1eRoYnv,etu00fTWafns&limit=1000
+1679840070488	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840070576	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840070698	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=kdNa-7OD4o1F,p-bDChtd0DBs,pwmGB1nh6HVL,qkqxtd6xLK5c,rXMJIMAwyrIe,s4iAvgDeYK9C,uoPJXPpalzAk,vTf4afRqtjR0,ztbU6FWTjBIs,5KdEndAP0cVE,9tm9LCVMR5lI,AhhkOaLrRW9K,E7n7TC5aQu0Y,GEV8GYv50kO5,Kgrp56pvpuCT,m0Om7AxLDKr0,nHIRJ4QjmUic,uVmvGeSkaoa_,vDnrwliZRi9n,wmPVznIT_egA,0FzLHSwZGS7X,4VtzGuGcY1br,6Nt9FRBeOJzV,9kMQpJR0v68e,GrhchbRnAwez,HrVUdBxfFzoN,JKfnjOC3L0bJ,Mesgc1s21RwV,NmneIsjlf6aN,OCY4NfrC9YA_,YedoU2tgS1bg,dI3uhNPumyET,eWPWvXALFF4Q,ncdNUkjiefSS,rn8vpJOHLe7Q,spLdYTjZYsdq,twabEDzCIOio,vpGrxMK3qk1S,RUh-p2Q4Sl2E,33Wn-R0Rkodi,77TC2Lu347EV,ZaVyEt8i_vtD,iHr6y9XMsQHW,9UqNg7R5GxTj,RY9MUChUd6iI,nEMPAXaNt9kd,wCo9bsnMRQkj,3vZNKsyJbKLq,AsigFi_kqZXQ,KPIVzINIUUlM&limit=1000
+1679840070756	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840070813	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840070934	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=RMnNE22eC8Dc,TjHb4pEkEM_0,ew4y0QZIh1vs,wfwKSMYtimgQ,1p57OPyNFYL8,8lwkjIgwCHei,DMLeIGjqWwwO,IEQ5tU2boS6c,RVXJ5eAkm9rp,SpiH0G2RUktE,VIs-HZFqi52n,Xidqz2PNfIi4,ZPHGlT4ZDfZ9,aE5KIcvfDXQx,iFdO2NvIeKpl,iwdTFsefkifs,obGVohqOp8Lu,zJLKbsZ6tNBm,3Vc2hOTBNiRR,FeBajYULieWa,mWkkP_T8hNKv,w_wPT_2i1u5Q,zTa_YbGRcgLQ,zl7QtNxiv5j0,CWbSpHMdvRU_,WEQ8pZCh6cd7,75GaXkkO94iO,Qd58bByAxKDC,a8U1Xc30vItR,grd2uhqAvoOC,DspLc6MeNeF6,Qq17YuKCJ29-,WLijACcpVWW7,1tgL3x4c-y5n,Ah46v16tanLO,SAQaMMrvIb07,8LS1DhDGcrf8,AJ8CHhLIrWN3,chlqKyHKWxNi,0f6FEUhaMcKN,7_tSsREJgWVm,gzvqibBpv6t8,i8Xmny6NtswJ,lOe-pSDT0kbI,rB-_10szz4e7,DcBZ_jKQ_kK0,OcLYWyHn6AWD,R-GdBOMVs1LT,Rssa2hd73tMI,kPeHy6aJ8lMb&limit=1000
+1679840070978	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840071137	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840071255	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=nS2Kg0JxyKBb,rzUcyLxYe-QB,w9PUtTGwgF06,xXs12npJd0_b,MHaT0JWyuMkk,RaAlqIxz6AiS,hc2Fl-bWqfh7,mRgH9R2eTo-p,CmP3fg_F7kpO,Xe-ZHUhrW7td,fb7SBUSkoiSL,go1RTP5D2NWP,psHxxw-tJ3RQ,riyguj6wygR2,sInn3sx5G3-x,-sBaRce9u-0I,0Xz4P4sJmW8U,0mjgpve925z0,2pVphNfbvX1W,3aYH_5NhR3dC,40khJAZO8C4N,4fB9FjqjRbgB,5cOvBbJXb804,6T2u1T4WcFd1,71G0uL-lz6hw,79TprI1hKTiw,8blkpE1lOvYm,8cyemrVHLPt5,9_JvS_ItdF88,AP7SUzp7yksg,BJlh5Hg_mt3j,CsWHZyvKbMwR,J9w_Rp-YwdaR,Kg1BBMheICBx,NIDP_D1c1o1Q,NjQ7sLN0Gmqe,Q-CPEuNAclOE,U2KF6KeBbB4i,UsI9LOzog5zM,VTRPVZZvoHpX,VgXeaw6HQwQj,WLehY0u6u00u,X4FZHvguUpgd,Xq5_hnLdc-sc,YIzyiAfx9j1A,_dh9iAR-XatU,cFTs8oRCUpFI,dkD_uv3jdALl,e7i-1tF6K3OU,f3y6_qdM_KP-&limit=1000
+1679840071317	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840071379	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840071492	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=gHJKAqCVhZ2F,h2OzEEY5t-WP,ixqNbFs2kspN,j5iF_UFNpPFr,jpG2uryVB8ss,kqvAksqpiebt,mY8CqcupOilG,oCrdckmA4M-b,qGxJ-gFDnzE6,rENbtwQ4aaFc,sEfYfAWssY6-,tUsuBFp7wqCh,uBr5oJXY51uy,zTQcsBBy5gVy,zuZOgPdC7YRP,6apXIF6cRn1_,O_ifA2S9cNlH,ZI4cotDP73we,jL7tGoofEdNZ,mriLz8YPnOZg,xDZDTa3DLlLd,2MR6cq2wnP5-,6Bg3oDyKDLZU,dOCpNxxiikXB,sxsXf8-mPQfP,v3jrOIt0WBz_,4aRLyPFcHokl,BBZLc6ys_vzn,EXcpBlpBn7OX,HTQNBEmI0pXd,OmE4h3LWkhSF,Tw9l3gvmbLAS,UYl5dzyCsF1R,WHasMDlWg_pg,bh0QaohyvgSv,elNo-1eXRN_q,f2hMMNkcfPUk,iOjTbIFPAraF,nJ94xdQ3RHwM,qe_lFo7LFPL4,suE9Msfazu-e,wAOHAIcjvHFy,wI396jpISKZm,69mUWjNJ7rOL,J7gr4nWfNK6A,OZbPdpQpNeRs,QFPFu5pSN1jU,aCJwoTWQN9nO,dJXmFlE5bvEk,jK3koa4lUcBU&limit=1000
+1679840071539	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840071658	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840071860	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=z0vCVqMvNcE7,zNlDzHEgB6Mx,07e097v73JbV,0WMza1BXfBZW,1GFJJ3uOUx6c,4Gm0tmVNDygz,8_dPTddcVLt2,DjEmpUN4ZUNb,KEJVyJJVTZT2,KVIuVpCvbpef,Rhyk6hewSpAb,U6YVqUF0_itv,YCScPUWu-tZG,ZY-M3oo7rO_D,fC6F4fv7wz3r,ftHSPUoOvMQX,jhUbU-E58jKs,mRHGHIlS1yw_,q6_Fu14tv0Qq,-b3tZBJQOhwB,71UEVXicHwU-,E5AoKX21m3CO,ca1H2Fkn_xSL,vKcwhtISpA6S,f6qZ5d4EXXk_,6bKAhO2O2WA7,7V4nRUsyrYnF,8zeJouNQPTMN,E_D5RCscJBl-,g2cEbG2FOnVM,jLq5DIn2mf1c,rAmToeQG0pnY,JRu8hZvzwEId,JkHBCqbU0_pO,XeBWJStGzdIe,hSd38fqmoOf1,lE89LqpL8pjn,xPEikKmaXeJO,_dmMD4rv0Uel,Bn10KfCBEhnV,PbsSsgQXayQv,U-ixBYULhgvP,c2pL100E36__,7TmzX8jlQBAv,A8eZ3Gk_E-6h,Bd3JWq26EZs6,BzRX_3TJ97Hk,DZk-TO56reX8,FR4CUA70s0xb,Oyz_t_Vbtds6&limit=1000
+1679840071927	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840072013	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840072172	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=PlDBG9_OZBqQ,R5heE1RXKcuY,UqI9L0XqTiLj,WVug5AZ2DhfY,YcPRKaPpiyy6,ZFE3IAOmBvqd,eBjJpCugH_Q0,h7bXXtchSXOU,ufMwN5vCIIqc,wZpHkPh46qzz,0IqYoyqO_Y3m,0PDdVRBABu5S,0X4B5J7C_CX8,1aMTtdj4oP31,1fYGzMxi4Qe4,HavC_YhSPHLc,bYkSp_xRzKP2,h2UhQmlk6PtH,inXCe8IY5FHV,lYQaHsKIvkNp,s7VD_SmIamzo,wMoSmOvoggXh,1jzz9vZ_00g3,Q7a-iXCmv3mJ,RfUPpd9i7ydk,avR2zUIKPYkX,bmjx5AZkWqgz,eo1buZMrthga,1k_kndAVYPQY,305zsq7h90yM,CAwX8wF1asx8,D5Wr7SbOnA5U,H_aXjJStL8kh,IBbQp6OLB-an,PT_pMFcbb_Hv,PpGFqld18Urb,aJlUsAqLCBcf,esnnUYbaEUnS,fTkaa_4L01PX,fYamutrbo2Qg,lqXYMNWy85AL,nm9BZ1BBGkdc,-RyOqG6oMAE5,1EWzK8NY0rAO,3PRRXuau7geh,GQhqJ6qmuA3y,HoOVsp44Rxue,NOS_3jBqBjDE,Pz7e_gExgn2S,QthIvvzYtlm1&limit=1000
+1679840072231	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840072329	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840072452	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=Uid08bC47OY9,Vozo5Y8LpmhS,X0IEGspHjfHl,bwH9pLlLjEnC,cdkxPUFsUH9w,h6AAQlGAfTIM,ieB8kj5E3Okx,k4HXT4JDhK7p,mG1IYpDL1CRo,sItd2FmylFur,xlE4sOgb_6yJ,Z4FjxW602TxP,253HyyrzMhO-,HYNn__A0XGiB,Y8BaBMeCb9jg,fa83F7HjFOhQ,-dBfT1ueCdol,0iDrw2gauc73,6aMKETCyZrHR,8eh_rmzg9quV,9qazPoFlHTnU,EUZvateupFOQ,HKbRo_gs0AfE,IHgPOoOk5SwR,Jdm6k1gcne9r,MTcdwJMFl5qy,NV1aU55GUE6g,O_0Z4-cQK3O1,PJzkQj54Isfp,Po25M-pN4TUC,SY1PhFcFk3LR,TNwpb9p7oil8,Tf5m6fsdInyp,UNVhWDYSXGaK,WpGeXG0gWSqd,ZCQilRp1ZZZ8,_3SAi6iQpDV0,_7VJ2rE3GQDJ,e0KhogACRaNm,i-jR4l6djFqe,leTdhROsEbeu,qz8XkoIAS_Vg,tHJvCXn48HbD,xxbK28Ju_Eei,yqdeWw5WOcZw,6SUKryBbdzlC,7BofnRaCfSeA,7b8SdXMfSYi5,7nnlFiUFfUEd,8rZiu24DUbb-&limit=1000
+1679840072511	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840072654	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840072758	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1679840072777	Sync.Engine.Tabs	INFO	Posting 1 records of 594 bytes with batch=true
+1679840072778	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840072779	Sync.Collection	DEBUG	POST Length: 594
+1679840072840	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=R-mH1VXRy55j,T0XhNbVz-wYo,W9tSzpgLEXNZ,_6NIEeeYjJjG,_DwbylPJFYOr,c5Pd3HgB7VSO,cQFs3CMrWQpZ,kxHwk2MK7X46,pFI6vFVEHrlS,MM6Sooqd_RpM,NfgjXU4jmi6N,-KILiPOp1p36,8uUSggKeNloT,CaLoWKXu3dR1,DydFuDNYqt2T,Lkdvngs4OROL,ZIx4NFMDFr5t,gaTnT7-LBrA2,hzFSJhGHfA_D,fEoRxgghO7v5,la2-TYyuD41C,zNnwisP6Vz_Y,EojaNdhoIxJB,aZPpkjUM-Yeh,2pIDaEBRscUa,6VMwvCPBtLZi,EGcbKeiSS_B3,Eacev7njWGEV,Lx4Uvp6rN4xn,Mimz-zTqVMjK,PffFv9liXFaK,QrTu2CBUi-Y8,TydbTKdMm7jI,UTMZ7HriyoKV,_Kwpomlo8Hoz,dKSEmRXk5nc4,egZacrpOfUcB,hlxD-aVK4hlv,j4d961-nqPsj,l9efoqfFqp2U,lATMVMwrEoRk,ozZp37tULDCT,pMBAD3Vx5UVl,qth0LCs09zkG,x8t89QjtnAeh,xW47vVlO6O-R,3blrQQYqxMtk,4KiCYlFVGQQL,KSJfJtAd41PV,OuxwTOna3RnJ&limit=1000
+1679840072925	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840072988	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840072996	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/tabs?batch=true&commit=true
+1679840072996	Sync.Telemetry	ERROR	Notification for engine tabs but it isn't current
+1679840073192	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=YqMNxbTVGAV5,_MRq8rwaelBw,bUAGKfBdATbD,f33lpf_cOVaW,mpngfmnnlwCn,vaoRud8JJMJ-,68MdR_FDkvzW,GLBeqsI51i55,kRrYvQ5NIzao,65PUX6kmMNSn,9qJZN1OUKx29,DHg8nrBXafRy,HWeOARwLknXm,O_SlxxSXmm3J,ObxO4DZXWOJb,P9WIV14CapUr,UtrX7dbkGgjb,Ze8dMAXpDI3m,fRZdIXGtfFEd,fuFNwapPdFDq,iI9vJW5M2sKd,l7YGA5TuyGLX,o_9vsYv-7XTG,p05yQ_iLBwwv,th5X1kqtrzPZ,vxhIQWvS1LkN,yNMwmVfuqsUp,7aTG2NPcNHA4,EOu4MSnVd0ep,JvW_SwutpuU7,jR5dwLIKEPST,mLFTZy8l1OEa,J3KlDZhKbDL4,KbVpufMaYNRU,VWQfI0SDXWuf,aX3VYjCN7vfA,ng3S93jlD-lf,yPmb4AP2d3I4,3_JuGDohAeLX,3nz9gwHI6ObR,KhL10lfD3kKA,sz26TL5FTELl,tVwhq65gkhtG,zLhlb0DdpV72,-CRYOYPHGASu,8uLRvsflpiFS,999WHZmVY5fC,EgHmyDLPT7mq,GvwXfE7eX8-h,I1iq37rGofLj&limit=1000
+1679840073232	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840073289	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840073409	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=K1yzFOVffvKg,K5uT79yKHnAZ,Pc_W3H80xzkb,R_YqmW98k6BJ,TxfdGG0bUIwb,WY_yDXuh_W8V,Zgzqhc76-RvP,e5kDar5xRMM2,ldbGDxTmzHw2,srVQGd2kzpPF,-VmdT3txKEYG,38VDg1pUJPAz,3LRjx-nzwwQD,5YglAYy3b9Rv,9aqzEaUCza1T,CQ_OKru0yI9T,G-FoQwBq2cFt,GWsunmGPjRan,HJjlkn-I36g2,JR6HcHxEnM2O,N1L-1hegYIaX,Nn1LaVGRb35V,TQXRSF5YBx9Q,TT-gMGXFGBg_,dIqHyxvpnNRe,ej9C1gNwK6rk,tsJjSHonR2CF,vbgyTS0AQRdj,yeH2nFHtJPbG,0I-Xf9ySDQ3j,7CymRCB6F1vr,92TaAAYI8AVY,9gyJEKNLwyMO,F1JiIznQgJfR,JxNK_szsSdE6,RYRKxlsOcX3m,WMYi68BQktEJ,WZgL_yUW7P_b,ejgpsuZWY0-O,iV2IY6I4pCi-,mvdZMoGAIqlF,nt16XAIx8p8V,ssVdM6Is6diX,szSWSqlvGsgP,yABHg9VaMPGg,8K4yG6NvYCKZ,vU4ojAoitmxb,07urwYcbFep_,3HJ9fQf7Yez5,5MKo1j1a_oya&limit=1000
+1679840073490	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840073574	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840073811	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=FFEp1rwGC6Hc,aUuKUrKlRz4y,g4b1JEePHRAZ,g8hIZ5UWDQWb,h3A0F-ActSsJ,ibc-yUbcnAUp,jwYxO3jLYdoe,nq7J4amuyvHr,qReJdWynf3FO,taGWivGmXqIA,xoLb8YogduP_,46r3brRatQSE,4JFzquAX5ied,7Hw9WIAzkPFr,99TK1dGefJF8,9sKRlXrLDdRt,BLcBWCH9DfUX,Cl_uRRl2IDnM,Jw9RUSrn00eq,MI330TzQTLQx,MImPMo5toGN2,V-oNLk02sXnf,W1dyiM1_KwCg,ZGrzK13J2UQn,b-pbDIqhzqtT,iDBS39M34bEZ,lPvBXinEIr4S,ofgAgiqm0HVw,qwES6egGFA0Q,y58niWvTPKbs,y6IRZE2I6fWA,3hvqh8MhK7Me,mlEan-5UsoiJ,xu26L0e__Yyy,rAEqwRhI4oKc,GaFpQz_w0_Cg,HHiUS8SVjEBx,Ow_sV8xbzINK,XNEDcpztt4L5,xF1qLdKmb6Te,0bvcYdVrre_0,6VousDJxWpin,BBRXoan9Otr3,IzQMvnTJArXI,LoCV3zeynm6P,Z0JaAjjhZjli,_pW-m1cUcXdw,c_W1MAZ44mDX,ckm1TmDDkKbE,eqSBGPgNIOnr&limit=1000
+1679840074153	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840074233	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840074354	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=hz5nQbngS0Ro,kAcAcmKss3CE,mBHHNOt7ec1G,nRMVI6-EtsC8,njpeVPudr1sZ,rIWfDc4tOqyE,sdm4EJ3O3GxS,t00o5w1jYI8o,0tIWsh0RMz5I,1H4U9LrD6ije,IeWqJ-CFb16d,L8Dn1SlKa1oQ,gGQ8KvyxDjpW,JCWuIo9HaCfg,6WN9GY3O5tgs,GG_VZ6CGuFKR,JZ1657YzQfxR,d3UhTXzH61x5,o7K3LX5syVNB,uKmq0qNhTOCz,zae3su4kQPA4,LpDG4viirM5R,hi32gCv4eFhY,sRyvg8e6t83p,7ewXfZDp4_su,7g5IeVx_qOIM,E3MoEg9-TT0_,H9iyIgUS-mgr,7a76RTuiz5Tx,A7E2-ndwW4-H,BeuNAbvVrnwC,GdodtCA36zAm,SgEFMFvXQxuZ,nnUsbMfCVAWb,oiYs0GChhbwm,pKSoE9dr8YLW,qDOI2RX-SlFf,qzEtWDQaf_4u,u_JEARfSwgWY,zUysV8Crra6Z,255chwhqyusi,HFh6ETTgjOdJ,MTNGctEyMK0Y,_RodnNQwDVSC,bTQe_v3qRB0C,coHRIeavkBzP,DCE0bBNBqE37,BW_znqQZx4zv,PoXhGb2WUoIs,SP9RaaiMcQw5&limit=1000
+1679840074426	Sync.Engine.History.Store	DEBUG	adding 49 records to history
+1679840074499	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840074727	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=XXWT-Xqg3Hga,YrEw79Nhnkuk,cdY6SKcBGmoK,wi0mH-ARgmv8,yxJekdX5QhIJ,3O53AHeKTEw-,8Xs5lk_7BThU,DZiEsG9I28o3,R9QiamGrN0C-,Rpb9QhVYzCcm,T7p5FdzDn35S,TieH7VWVuoSl,VqzTJlAeq37d,abcEzJLZztwJ,vKCn4zilTEr2,8JLR4uN8lf_0,H9N5EsSbwq4T,Hd5Co5-7NrfJ,IyJ-nISMZpeL,PxwZtuym_OpA,SiZDeZUtnNN-,X37UGotSp3Mr,Xn73EVRdyx9T,fCe9X3Xm8UU5,niD0Z859fzW6,rAFcRNnas-HR,vilJOtaLTKfe,Rf7stBBnCeZ6,YyT0LK3KxLnF,ItY80rwpab5P,p5y0P8ZRO1fW,wWdGjWjJlPAH,KMo7kvEUTxbQ,NhZyfwHhKvUQ,nD6JwS5Jj8Kb,umvqzcDr9ies,vDplgiQHoKBt,7QgTec1Alchc,qsYhHqDUCCe1,uUd0bPRYnzvj,vLhAMWOX2SzV,3Xq5jFHMfBxl,1AYF__znSnyX,ECANBrGeujBC,JervpaFd0H0a,b_xSYtdx4tis,nVwA_prWBZqk,oVlR23E4BdLW,2TopUhIJgaNH,95KZBrS5eyG4&limit=1000
+1679840074774	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840074837	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840074966	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=AbRXX9NqYMIW,IqZpHBZHhIIT,J05pX1uE-hX3,J7sfp-4PpZUq,LNaKD4HTRW3J,PELzegJyaYUj,SixvoqD3ZNlv,T3fxBnelX8-B,UTbmLUZaUx0y,YVTMg4WZUubg,blSKbtCQpCn8,n_7ltzd8vGOO,nmO2364eGsm_,qBBTS6BgvbIz,qD78bkw5Y7LI,tH16qCTFIEOx,HFxWPs0wFhZO,VLzcPc4aWUwp,_hYjt7mjbhGg,fMgmM9wXfhIh,p_NkmDUjLvp6,vhu22SRY1sfv,IHhGT8Uoebxl,OmDn5chqXyms,ZAf0Wd1npqR5,aL-rxXXFdu5j,rajkyn0Kyq0_,skUfd7ObuJas,EPcJrldB0A-Y,EYbvpVZbGJpe,F3PfE-QDNJcU,KnuLcyoi5Kjr,ObmvzUetkZnI,PKRt3FolDPuR,Su8vyoTWo-Nr,TwOCmJSAu4vo,d-0j_D14uiR-,dT8Ls1crb-3o,eFtAGjwT0wuG,lEVkpKwJwqRD,4Kno5WjXSDSo,6rob-oZoSkG3,LB7nsFo2O-wT,Sgsr9NQh4Ot1,Vb88Mg3dToB6,Xgv6_E1kGf2Q,aKqYNpO6aDwQ,a_lafS7kXd-v,cNoMpsC4BsT7,j1uMxFkN7tr1&limit=1000
+1679840075026	Sync.Engine.History.Store	DEBUG	adding 48 records to history
+1679840075109	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840075221	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=kcF_HR5T09cZ,n1-nXJ-5cFGM,nL85-GnFSO5m,oViFKJ9Aj5Kz,vhE-fas64z1g,wcKwHwwra0dy,0EowWyjRqm_f,1RHqlO6KNPbo,AyPUv9EjsQ8Q,KkaSTmSeZ2Bk,hp5YUT2bHACq,jYGau4KuvbHo,n4H_Iu1PDGdC,s0xa1ZiY5Wji,2q7nj7Y5m1GF,3STyGyIZs96P,EY66rQIIp-8d,HNdBUd3V8AbC,JcfFJUE7prY0,Krp74s6guoIM,KxyheV2KGhJn,VTdC0SiVp2-o,pZPFf8XfSk6J,rvl3cm4KhpT4,z36Rr9NWrAm7,5yOnzR_a76tt,Im0uWY5RZFNj,KL8_56W7NnMN,Kt5qPLX22_dq,WFSwzyFOdo_b,a2p-Z1aNY44Z,f-LW1DAXElVX,guRgnfxprWQQ,jTzCWkGYpAst,8Ers6JxDFO1q,BUTKQvs-0CjB,QSyQ-DzfWPw5,WOVVAPjKGmPr,Xk4sRIX7HuCv,vw3vfzGeP16R,wj8loyEfojwK,-QZ5Nk7KOXcN,3hYihczyzOOC,9pgOpS7sOdhf,lnbXhS_2FOdV,2D6ZlRAnKLwZ,6jEWlqesTXE4,8HGjMlBg8tw1,9zN1zhz6tmYO,JI3IzKIBUQ2B&limit=1000
+1679840075277	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840075360	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840075547	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=K8yQ9bO2LZ_V,_16x-Mebly5x,ek0NK8E8Cdnh,hOmvJ_kwsqsj,hkuLo6VKCdxK,lafgeJKUzz7D,prQKXy4Tkoia,y4_S5mFwys0Y,05V-Am60jF73,5lF0by180P10,5oMcjTPyVJim,CIX56zJ3_DGL,C_qU7HtGQpms,DfhpWNPVKZzk,EhjpvGHPIvrd,HHqtbBRJVjCC,KgUe4bHi8_jp,LxXDmMlcbPVm,R_1bI89md83g,VMM69qP0tEYs,VSx7rGceviQy,VvsPl_frEskI,WR1IQKMj2B4W,Y3rOKtlNdVHU,ZVp6TD0xdF3z,_RXoKsdxZRr-,adERXcVkZawa,cHEP1ksSyl_I,dYN8J2huW7aN,g55fWtIu0d5g,hyTZkJlPkUj-,jTaE7mrdRJay,l4gEdgemqXkD,luayISt7sozs,pwCYQU4C_cUm,t6b4HvMFuMkw,tAf2x0K4x0uG,t_AldVTuqsk9,uL_J1IBd4r6l,xHIcjWbXTL9Q,yZr-g6UcJiZV,z0YiIiEJQxlf,zKIaj1ydAb13,G_u2nriOOW7C,T6s3XQqERKxR,UFhRyuHqj00T,kBXXQ_DYedca,niRhjOIhOii0,5NjFwF90usif,Kl1HCZHpg5xF&limit=1000
+1679840075627	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840075740	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840075860	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=sjFcdlHwdxYy,4IFxONh70VRG,R3E9a7rYnPRU,S3vRFbk4J_7z,pO1FmWd2KQKU,0oW9pUelhPAw,4YtcytzsNEiP,RcyHLbIQjA34,aLSng-NcWU0o,f-5saRIOhTy2,76KRMh6rr9P9,CVU5xN9PglA6,ClvPElNJaqga,ST6ZOESwJOY2,sdR05ZrzFCzf,aeSCom2wlEoR,6rixrwiid1b0,89HnpsyqHHrM,DUHjVT-LFRXG,RMSSPaiSshUt,gOjDS1PsfLE9,CKMiJaqAQk93,NWiGv0lFiGAp,NhSX9j_9rZnW,Z5X52Q0SQA2b,fFIXPKcI7zTv,uOtanqJMOt6P,w0wcz1Glucrf,xs-RnnTs6hs3,MFDXrcbMkUzb,R_Ct-uBFkQlE,S_Pkn0JLf5Ea,c1BeJAGaaikD,eMd1jzaEbQOq,rE-9lhP8k2Pg,9toWInuaFOM3,pbXpllf5sdiZ,DgPn_2uErNlI,E4cEumFiGgM_,R1_8V6-acEPw,RqdCXnF9JIVZ,jLrqUsV6cGR8,jUFFgVwUM8dz,7LEJ7OZr_TH3,A2Ne3ye4LydK,GOmOxKNf-Ezf,VSwuS2SJBtGX,YQN5q6L298lc,gQiqCvDx5Yqq,0rEMoTb3VT2_&limit=1000
+1679840075936	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840076008	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840076127	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=7dcZbYJ8BIG_,nxZdUYvWxVBw,HbzHxGUf-6wn,ehexZpBKrRdT,ogVjiVzHXxi4,pQIv3K_1DHBf,0q9MjZh7-4in,1FokPHEEEnAc,1bZSv_PatZqo,2i_sUrlGacTa,2nXohQNxhhXU,4UP9cvmOUFE-,58pwmLpoD3qv,6D6akurIDu5W,7lKZJH8elkK1,8xtaTz2U8V4F,9Fj-STlGBX0e,AXS3Xpb_t8IF,BZ0eTk7jhTej,FEnb4YypyxFm,GGa6oBXLObvL,I54SBoLAIkxG,I57g6vecXI4m,KvVr61WslSb7,Nd_pBkyTUpiA,PhP3hSoXu-QE,PzWftM5GKhMu,SHJvY2UBc20a,UaJrRqPRQS9u,VSOteX8itHm1,Wp9kYZQrtMQy,XUGUIhSexC2L,ZUt0maJudI6M,_CfHDkyR7KFr,bz7gOj8drUlq,dIiOivKnRlUW,gT9cXU0D9_90,gVuvMpopzQqq,h4h2HsyoUS8Q,qaYNIgPfIRff,sqY8THwONyb8,vhzt6S4jH3af,yaxV0292eYvr,zpxF5IHVrH4p,2aTgh6ixpI4Z,4By5C5_T2CSz,BLHDgefvR2Hl,Gcs2fRqeBdXy,HlbHVT17XQQB,R_CtV5JSLn2i&limit=1000
+1679840076182	Sync.Engine.History.Store	DEBUG	adding 49 records to history
+1679840076253	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840076478	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=VnLdxghQZ8yW,eIfvjKru_OLi,ejS-DCZ6t7PD,hCDP_PhHvuF-,jnzW65pbeD_-,keuCP65nx-Cj,rA101A1SGgiG,uaUOFXSH6K4C,5ScvvHkHo6lZ,d5e76kY6a0mW,w5bbSuu5jWfH,8knnnwQZ_zEV,KjqsCj0f5v9G,ctstOXeDewD_,--xSGLpozpgH,-1fcyLuQbtj7,-3164NE6y5Sa,-3S-e-RP_DtO,-3_FK7_5ET7u,-3mmcVl7_d05,-4V1IYf1lX1a,-5Hll0UAiKZB,-6APLUYQb17A,-6LH0xL9b0f4,-785bisrsgyt,-7X0Z-PylsJx,-8CKVRfTpCqG,-8NtZ3raahvW,-8WWgBa3Ra8R,-8uKN90GKrDE,-9BPUN1qqXTm,-B7g_MQyVAga,-CfhdlFGuDHX,-CyNVOfmciWp,-D8bpL04JVmA,-El6iFAuOAz0,-F0BXMFIDVjz,-FSbTfiJeYIS,-FxNnKNy8hi2,-HtDTGjH7UsW,-IIBRyO3A7rA,-IK9X8Xchc9h,-JT71g20Stqn,-KEFbuJw2_hL,-L7FC-DQaVOU,-LENvCEEmWVq,-LgL85uRylD5,-NANiA3h3U8D,-PSIkmB-rS-H,-QYOVlSVLzPu&limit=1000
+1679840076519	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840076587	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840076879	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=-SoX8Sm29X71,-TK3_FkjmQ3W,-TYE1EFBzUmT,-VEfyg3id5hj,-bA5_vsAuvB_,-cN0PUYuWGJb,-cUcZ34HLQ8H,-cvmj6YnhJo8,-dutPE_5zgqT,-eOp5f0pF97S,-fYVuR4sYuaF,-gFdWCHLEJW7,-gMhhffE2Kw8,-hRfVH_L2z5B,-ho_yKGvr71e,-j0dSbpKsEUf,-jQxJG4K4b6h,-jfdyvR80yEg,-kI0IfAV6BCG,-nJ0qttGeqX-,-onqAkM8nUIB,-p0-WBhpnM_0,-p2A-YUBwZp_,-phCUuBxbG4T,-reQ4Z0Krfgv,-tqPfwTmQeKY,-trnyFRYxza_,-tviNaM2HEtG,-u6m0jyEw32k,-vHL27zEfKqg,-wYa-ifxWsix,-xYI4vUPh9gd,-xi19PdQuzzS,0-EWqs6CRLPG,0-nhb4LElNud,00zuvNijRRQj,04_tOH3pKrtu,04rD6zxliHlM,07RvgCvIQPd9,08b_2Q3kbKIJ,08fCqpqN5YoC,09Ub0ebRVH7o,0ArDnBzSyBQs,0BSvy6cwWEto,0Can162gHjEg,0D-qGnQS3Inf,0DhFWAkHCMpy,0H91DMP0OhAD,0H_TgodyTEEc,0I74EBkxUUUy&limit=1000
+1679840076918	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840077035	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840077160	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=0MjCOnXYYUZt,0NJp_ZlJriKQ,0P2PgEWry_2N,0Rij2-pwQ392,0U1ivPuFH3PG,0WkkGmgt5Xfn,0X2REPdWoQPu,0YsDCss1FA8x,0_p9l0CBytNj,0bd-Z39b8zPe,0bvXHWxgx-Fi,0bxFhWDjtJL3,0cH8MvufEQal,0dEaRBW9g03x,0eM9zUIUxss4,0ecFfZBfZ3do,0ejNp54FWR9_,0f_zL2qPxeHQ,0g4XS_lSKm8b,0iovWDyoEFzC,0lMYrKLLbUWH,0lcUzigrwFgx,0mVugEqdEq4y,0nUxdctZiT7W,0p5_Rq1r4XcY,0p6dweWyMS37,0pZEw2fJj2jI,0pZJKkbOsIXk,0qknxio2eXfB,0s-1Q5YHWFyz,0s7TXQsOVeG5,0sRtBEMenQpP,0sSQ31e8LVMg,0tYGSk7GynPn,0tdUX4IE_O9b,0tf5MYIRaDCm,0uUJSK-aXQEn,0ugNr9Lg9wjT,0vbUkRSp_jqQ,0w1E43rF_Wfr,0wqVksltHCaj,1-NjbMDEqEKm,1-yxJhSsUIKw,12EzXooVaeB5,14pKaqDCFent,15ku2YiyVfn4,16Zo9rzn-oeC,18PZpOBN2Eq4,19xA4DP2NVQG,1ANr1chT78T6&limit=1000
+1679840077209	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840077300	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840077417	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=1CFD2kGBFbPr,1CS5R8UBKCZf,1CbBQIwajjxD,1ELnBUAbU37_,1G5ouMecDjlm,1H7iRtm47NPI,1I5y28t1SSQ3,1J6_HjbQEeBv,1K1iT-BDtlYz,1KDwm9fK6jEF,1MlrgOxC5QRz,1MoiyOM81Pdz,1NwFEocmz-8B,1O0Z3r3XELAb,1OKMB37RffiK,1OnjAjO_ZtKz,1PbKdEvJYpuT,1Pi2yu2IuLhJ,1Pv3KnkyIFer,1_s2aaC3yJ3g,1aKFo4qVC-He,1aYqPh8XrR3O,1a_8EeYOMWLy,1akBWScy6YUk,1brReuKbYx7l,1dqUXiQZJg3R,1fHfLGtKhGvl,1gDiQgp5umO0,1gtota3Dj0qa,1gyhXMQLsjp0,1irYCSyI7X4n,1jLh5TL8O4_6,1jyk051irRxE,1nSm007enFq4,1oJNi7ZDCT20,1osf0tbqhX9g,1q2lHye9CL3o,1svzt1BnBW5T,1uoORTcMkFXT,1v0FgOU5ARcD,1wa3MMgdCNHQ,1yszEv2_m_1D,2-Oxp1xQvoYr,21mi59uNTsHi,234VwnIQkNDv,23PO8QmHlQN_,23icdxBt-Ho3,244jKT7NhGfL,24VjxpVSL0pH,26iyjAtbKP-1&limit=1000
+1679840077467	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840077690	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840077802	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=28yQDM293ZGv,29v14FLThqqu,2AOxFC_YxsZD,2ByTzJfbzC0A,2CcF2D4exMBr,2DiMrMZRhEkQ,2GF0mVMhYPua,2HZJRHbcGkjl,2KnCGZFGPIWH,2Me39jiW9uXH,2Q086XdhPbS6,2Rmsyk_kwY6a,2Styh3VNU8E9,2U6xmfgSlCJy,2VglpygDqtgs,2WMbcqVJhmup,2XFFdvb_9gid,2YkGDApHXrpT,2YsQK4tEkWpl,2ZBd7cY69-wX,2ZDxfvS5ZcXz,2ZLqLY04-Zov,2ZxDFXMVCNA9,2_-wgKnPmqWU,2_W9S1qQNpim,2aVjyq_t_Y3z,2c0knoVGbg7Y,2csef8bWOyXj,2fa-nniZ3JvA,2haWU4W7t_I_,2iJWKwAg1DHw,2iaevz-JpCUh,2j6RQQON-0uR,2jLZ_vCAhc7-,2k5khlyUF9eb,2lmoeL82A2jw,2oJ397DMQJJN,2q1Ld82H2erh,2q7i8YUbsJz4,2qSkwwUsCifD,2sPArwjfHADb,2vpk0bg1oePB,2y8CVGEaL2F0,2zZ3N_smbX8E,2z_FZRmsBK2s,2zbdIBmc4sFt,30MWdv2fBU9I,31WqnOOG99Ii,31q7VR17UVES,32cExcmRDNFI&limit=1000
+1679840077849	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840077954	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840078085	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=33E1FE9O8IU_,3976fG_HVIPY,3FkSsc7Oaejd,3G-eFP-tSU5D,3G5Ebsg-brFw,3IOnPpRmx1FG,3M-2SUNitNV2,3M_IPT-AovvU,3MhMf4eTSK8N,3Mm6Blqj7GvJ,3MnQeuDkUFmq,3NLU7KZgRN-0,3N_vFLiVxjAW,3P7rpgfCcq1a,3R15y79Nao_t,3R1OhO_sMieF,3TLYNjtDGZOz,3U86bUJuHo_p,3VXosnR9OLL1,3X9gYE_z8jte,3XZLW2XcwDQk,3Xwc89e_Wv8O,3Y35s6w1BEKY,3Y592YFyL5XV,3ZAIjq6kL-tz,3Zjx-q_QgA7g,3_k6rjDA9JX7,3avzvBC1vK1l,3bQHXr1KIF1t,3bQZ3EgV_ylD,3bpJDxOThhO1,3cl9tE-GiGvr,3dvo2p4IrWMY,3fU6qIVZ4tf2,3fy0r7PYguOY,3gQAtxbi-0Bf,3gXksXhvDcvG,3gfipwjo7VHZ,3gqWlRjTvrSH,3gw_cK77gNis,3hrBlqc0xHQi,3i2H6nNKi-fU,3jIbXitFvkYM,3jOLhIL-ZAbt,3kJLBoJtXTCu,3kKQDSFE4l9K,3kdTYcnSZYDX,3mApK6a78XEI,3maxmrJHE7Js,3nD8Fqqu6du2&limit=1000
+1679840078135	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840078518	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840078646	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=3oSqvkF3bj8W,3oknbahRDWQN,3otmxS7HA7nY,3pI26KHHV79S,3pUsqsUVnOJW,3qmcbm8V6P2f,3r6qmkOohfLd,3tL8uzdBSH4T,3ttJohmZ6YeK,3ued9HOTW_0_,3v4QYOhOWIz5,3vtIbw8nWCIQ,3vx3XnFcu6Ex,3xjqBmEvFgEC,3yRFCFE0pg4u,3yi0_YYdFML6,4---rexCKIH6,4-M5rJnBomKu,4-kHU50Dojb9,4-q29zWYCOCd,40Lhh1UBb-Ac,40kRxfT9rcJM,41aNsuumsDtM,42N82phhOoZ1,42ZwqKhRYGqp,433tWVDp_pRt,44Ow_8E0HKc4,44PqHLNWr2eJ,46JUHFxUsyFH,4AXNP5-QHw2n,4C6nmIgeHjc9,4CGjKrxH8aCq,4DbLdXdAeh9F,4HM3UNMWgV5H,4Hqvbyzqo74o,4IHrOaZWlOiW,4KHsclM6mxJn,4Kh5sDV9Ss8v,4OOy1mgLyN94,4OT2PqzoDYWK,4OX4kBscftHg,4Ogroys4sz_o,4PQeDX-PcKLM,4PrfGJCPW5Ro,4QFVH116y20c,4QQ812n5S1C2,4QhQihskxvLQ,4RzK1qgMLIV-,4SGDQhJ5QQJA,4U7lS5Nktd9w&limit=1000
+1679840078706	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840078797	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840078927	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=4WHYmq1OMe-V,4XBAS72mGglk,4XFbaEwOGerI,4XSUfTh107E6,4Y8bdhPjT1vL,4ZBLpsB5i7ha,4ZeZMPURF97x,4b3Nq6UQAY6S,4cJY06J0SgTr,4ccZgAJUONLa,4dK-ucLeqvwc,4eL5u_bYHvpJ,4fwwJ3uNzyEC,4gPrW1NUBoW4,4gqZMRUoRyBj,4iAPfQFoIWPD,4iK5YOqzDWE1,4iMTHznZh9g5,4mNbaKREFrjV,4o0NOHxyYrlP,4oFdvoRJqJoT,4oroFVB1ll9I,4pjwuQKYevJo,4swxiyJJC2nu,4t9PgRhwcDAj,4vm2i68U4bkC,4vymaElAHrxb,4yOT1iqa1Ovo,4ylWUd-wqTiG,5-PAPtrJ6ymQ,5-hGB2s88yZ_,50BQ87wQTbYn,50NAPxhql65f,51Hy7Me5MgMm,51gxScwXmPhD,52hHdKlx8goC,55dfnEiYrR0x,55o2anFfamm9,56MuQ8aUM8pm,57UycSJ7xFIJ,58wLuvAjIZXX,5BBoSdN_OSZW,5BQ0V5D5haRX,5CemaMx68S5E,5DV7wAL4fEV5,5DjKaWRFhULi,5EC_WNXlG1Ln,5FhWgMGZntFB,5GBRNvyJpjK-,5Gpo4_I0KjPT&limit=1000
+1679840079008	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840079125	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840079250	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=5HEAnmBKic-I,5HITnyh2FeaH,5IN029CBYBvq,5IRWBz4_kDID,5KeiJZqvQaeF,5L2-tPB0KPQP,5MgIevAMVddB,5Q98j32k3DJF,5QDsDiEHdaMZ,5QyCFDIQu5N5,5SYX4KXGRhP3,5TeXAw0gasrQ,5WOqPvuzy1un,5XRhfWCg0oBA,5XvK3-sjNze5,5YHv09LcsTqo,5ZNBw0CHdMjs,5_NY5WVsNHQQ,5_PjAUGcMLEU,5fMiOmnfTmbv,5fTtABiAa5IR,5hPXG2C3gnna,5hdJQiMsq-r-,5irlBrVWVTPT,5jPfruNMwBEI,5jvW0dpCMTeq,5k7hqKaNSqT2,5kDKI1iSA53m,5kfhvgRePuLe,5m1XDlV_Nr8I,5nPmAxUNe5Cr,5nRs4qmjsUwv,5qJttSVnA4z-,5rbuMP58ZoMq,5rv054H3fF15,5t1k5YykWIX8,5uDPsTI67Wn_,5uJ860T5nCi4,5v_YruSovqGW,5wq_YZHTepBy,5x9fbEsK1Ke-,5xKJbe8bToKo,5xu-vBirxg2w,5yF9fHJBWRC5,5ybIbeAdHXCJ,5zcPWL8Oidae,6-WBQiHmo2NM,61No765r_oqn,622RGhreXp7Z,648LNDLsh6id&limit=1000
+1679840079298	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840079381	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840079542	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=65U1Mdkh_W3u,668dWzDhtrr6,66S2pmLUU9jo,676ctv5hWhD0,67FDqURbiIjd,67imv6Dgj4Jo,67p0I--0qUCc,68OkYBUPIsI2,69NB0QIxE_3E,6BGihNsItG-7,6E_SmxeMk8R_,6F6qSdTf4Kk5,6GwAINTMWUMD,6HZmJ94BOf4w,6ICUFVDY9Vu1,6I_XxbocWSvD,6J48uqheI2Eo,6JhwtWnhda_1,6M6YijpKkrK7,6MOwtqQtWo5Y,6P-GO81rzsPO,6RdYA8E75SAh,6SPcFCr_ZT5-,6Sgo-3l2Ya1O,6TWHLPRP2MEO,6TZm68t5qGmp,6YCa_g9UfQSa,6YFsbIM8ULsG,6YQFgIVPWS7K,6YlqAsaRNtep,6ZCX8J6pKaoh,6ZdNtoj8sABN,6bCsu6Ro1gqW,6br1IKHkemDd,6cucYDnJfXU5,6dX7QSzRHsVC,6epv2uPAtXHx,6fT1YNX2LShb,6gS8TrYMXwWw,6hu8SZ0cyCWP,6im_pb_meKUH,6ithYDQeDwJs,6jBQTi4ciOwC,6k_ryCwWy_z8,6mEdOa2k1C-u,6nQM7ykdszNU,6ntOPOj-NI5r,6ojIeqmTWSMn,6oojQ686Wwcs,6ou8ruBura4W&limit=1000
+1679840079615	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840079678	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840079796	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=6qCa6piDvBX3,6qaVhBYU8kb_,6quA-tsnOQox,6u4iCjq51ZJq,6wLxZ8nr73B9,6xZDOzTyKPxa,6xsU5SRELFrx,6y8tmV4wVVEg,6z_FK-CohyZm,70iqia0P7q5L,71X8zzfaIp2w,71Xs9-Bm6Pli,720ymQvVj294,728rgsu3EzE1,732Ma6REizd4,73LWekKFvtJm,747kFMAl8rgq,75cDXbkrZDx-,75jRK4KrT-BE,75w0s9iFinXW,76Q_X-9PQ8gf,77bgZ-nZsAjb,79SNBp0uuaqi,79v1IuTxB3FO,7BW9xk1ipBR3,7DRujptp1oP3,7IEZ7IzwhK6A,7IX_51lgeBFA,7J70xwlAMx-0,7JYBlv6Tmnto,7KVbMyY74riu,7KdF5-_cOxM6,7Kl3QThYmeJy,7LA0PoLx-8On,7LhPKIpR9jcH,7NeuTL5gDmza,7Osn4ywy2DnE,7RELuetrQmdG,7Sen9F0xShAp,7SjdZGzVg_XK,7TjaORjUtnmO,7UcOGUKC1Vpg,7UrfRFeB-_pm,7VaFK1X1IK8t,7WkraUkiKvvM,7YYCv95Xcmni,7Z1xlnAKC0oS,7Ztq0-BHbule,7akQk_-TT3a6,7c6eJ9nEVe-l&limit=1000
+1679840079834	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840079887	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840080006	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=7cDlyKtogTp5,7cGmxiG1EyAO,7e57elS-d20_,7f9JvJzhTi_j,7hBX96n01hAO,7hCkWoW6pG_p,7hZkpdGmKcqM,7i1Tv7eUDPbi,7piOtCbDb8mn,7q7wlNfOhLnT,7sYa_ag2C7jH,7urSc_MIsgR7,7w07WGMrvw_S,7zsxTnSDEAxf,8-jNDZGDGMvs,80H3xYsanAzq,81dm50YOR8JL,83QwQK6gtgSp,83u8R9h935Hd,84mW8jVfcEXv,85lNdVm2wx4n,860uzl6_PoNo,88MNYavuXtxf,89jJNaqKlsd2,8BwG2b0npUUD,8DMnt8VyUj9W,8DiTEoWfFJOW,8E5xK6KWuN7k,8FIU56fqPnWb,8IoaA5BiWgxg,8NdT0HgHoWEt,8P3b3FpF9CXx,8PjunoAMaPPl,8Pk_l3DOcV7f,8QEoPgYmFScE,8RYpjFXceAMl,8RaofD7rwimw,8TCNNxu_bXTd,8UnJ9P33maTK,8VOE4Mmtz-a3,8W0rNqUA0XBt,8WCgXiA9qHB3,8WQid7IhTp0Q,8XR9dFZSHl5c,8XbKjHHWvddi,8ZcNLo4j7Wos,8_vELJKv5vNx,8c3m4RROoFVK,8cIfmFGgWmpc,8ct0kGyqN3Zb&limit=1000
+1679840080074	Sync.Engine.History.Store	DEBUG	adding 49 records to history
+1679840080140	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840080364	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=8dAXOp2j2Y1h,8derrNE1vToB,8fBASYukOT0y,8fEbW5Hg8OqC,8f_7obcs22jP,8hCsh3efTK2J,8hNq_rR6ptvE,8jgS7YORC7mr,8k8FK1EVnUa8,8n26mPACWCgZ,8oS4ieJdsVH7,8p8Dr7uzs_WP,8pMj_0mxuRQb,8pQAPUa714FT,8pTNSc--tlzk,8sWDW4B9DxpJ,8sft73IpbCOp,8tJC7O9q2KwP,8u1zB0abbZWk,8v3cBrUEQzRN,8wrjZ5yptUWk,8wxpkgU-x58S,90rEps0pNLHX,90sl_V4woG0j,91tqtJ9LXPvn,92ZXFQ_Fse-g,9345QezQfTTx,93a64H9JnLQP,93e6XQ2OfQb9,949V_WKRaY14,97Mg2DVB3lf1,98pSNU900uGj,991L5uUxuZaV,99AAnAO5sHjl,9B8k38RvVr9-,9CZQvExS-bui,9DerCqm3szZO,9DmdDSentlYI,9FdJTdBRttdp,9Foy8tVrKPPe,9GIU4xlIIcO3,9IhOoF0NxCkk,9K-QtaehlNQT,9Mik08gnl68b,9NUaV6x-FzKR,9OADErnYpFmS,9OIyMkcTAriA,9OxPV06ZcLLm,9PTSjVvwAzf-,9PbogtqY5WkD&limit=1000
+1679840080485	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840080564	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840080679	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=9PssPV29MgI5,9QA-AkCsC1ds,9QL3bjTjNs0B,9QWUnEBH1OEr,9SFKS6RA9QJ1,9V35zOPZmE2j,9XeV1mykj2fc,9Y7TD7KKt4oD,9YELPdk9ylfK,9Z2TaGkrjoPx,9ZdTpi43PAQ9,9_dynZ7Yc0bQ,9_mubrziNWj9,9_tTyloTSQin,9aKgcoFuGw3V,9bLL3tQcCtdY,9d_LNVZefPds,9et4UevHxOym,9j5wJIO23n1k,9jQSKBUiF8gR,9lNGeDz7JHRD,9mvyYT8zfToe,9o5QKecwYZnw,9sK6C5lIwZEN,9seWIh2dN-o8,9uhY9jHGnCIk,9v13IT6leqkY,9z2xQotVnZpv,9zMXzR4--FPu,A-U7nHBo1N3W,A-Y7EFYE0xec,A0yPtm9AwAdb,A2rGkiYlPoMr,A51WHPyxnsg0,A6FPo9OTvfMd,A8EoicuGdJfb,A8ErRLGHF3eN,AB3JkC5H60T6,AB7kMf_HfoPQ,AC0MLe76CuqS,AE1fPCgOnvMK,AFUORo70GpCV,AFt4KJtl8DQJ,AGF_BldEz_qP,AGvMwLiO5kX_,AHm1VAds3loW,AKTGWAs-OeLN,AL1qXx6t3VLr,ALvZu4xS3i8a,AN1RcvrvWh_C&limit=1000
+1679840080753	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840080851	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840080984	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=ANQKw744DCjF,AOiKE0kiRoV-,APJsS1TA3AzP,APvQu5O1UdLJ,ARZggD0iKQ2M,ATxf43QQMRyY,AU2aDBC-zagM,AVM596elxQMH,AYY3vzPT7kXt,Aa2vufpIx9ui,AaTWV_04L9GK,Af8d1QS-cFH8,Ag5ep8FeCTaV,AiEBRKluby8B,Aj_uMgpi32cv,Ajag1F8AdxgC,AkTd-6q42cdh,AlCICMtefUPV,AlFR7ttY3ywQ,AmrmJhfEm-Am,AnBI8YMLJHAV,Ao8MiW0CUa8y,AsAYA6BW_mlI,AuUIvBOLntuf,AvgNHOUtMhih,AvuejCusgVAw,AwVTw2gtFq2W,AyCRwdN5cNFe,AysHHi5ucOKn,Az5SjPyHBTyA,AzaO0al3_ur-,B0qnkNCAl_TP,B2EA4oA5sxYn,B5NlylpoXQaB,B5t2STIRpah_,B6e1tP-3E6aO,B83SBry12OGQ,B9h6BTynzFpR,BAL1-80YpfZI,BAj8y_CDkSxo,BDlIw1n8QCeQ,BEY0-2uz6BZw,BGT899VfB_Vn,BH-uLp4gMtzz,BHotCdBIK9JW,BJ0gKm3gXqB7,BJLxIgPBz-h6,BJn2UbD23qF_,BKAlhnP-mQgP,BL3lS8eSCA0g&limit=1000
+1679840081047	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840081131	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840081279	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=BL4PCw5B0byu,BMPdsqgNiuKk,BNUvDwjfI8Im,BOlFbn4xhnUW,BP_tEekd5cLO,BPvpbN3J43XZ,BU2mIn_xzkIW,BWd1aDcFW16a,BWeqJxMV4irA,BWoiYGm-NSWr,BX6wcE2AOc40,BXDt8LG4BA0v,BY5xroIosdoY,BYUldRSj4LPt,BYbRmjjQzsjq,BYlLiWUB8GTu,B_zyWh-_90Da,BaC54eLVpcnK,BaOb_VJh5JkJ,Bc5iAhaerrcR,BdPen0R9LklK,Be4PwRiOtm0s,Be51hYxANEPA,BgBnnZgnZPyZ,Bgqtu79n2XO8,BhTMiSk1Ywkc,Bj1IvnhRCPrD,BlJZ6voz4oeq,Bnb970vbbOob,BoC0ELdeV72L,Bozzy0tp7ygj,Bq9ysNj9JOml,BuBoRjWlzgP4,BvzSastYcmUu,BwE13qK87uWx,BwmCiEcHUZC2,Bxty5766ifTS,Bz12f9gUVp2Z,Bz7jo3IFpWFR,BzXlhPWINMCy,BzmMl0IExXAb,C-6vQU7bBKyB,C-mDUsxyaiKX,C0Zx7uCC4m5d,C1E7aQT30XXC,C2BjuMj8B8Ym,C32TUhB3qKsP,C4DB8Pm9aPtv,C5Fj6QsgCHDZ,C5f9mj8rO4ow&limit=1000
+1679840081325	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840081421	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840081594	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=C6N6MVzhsgrN,C77YS0sVQS_M,C7Xr5_AcKdA5,C9_dRz_XjCRj,CCL9mjCTrrYE,CCmN0uXF9sMB,CDNg6tfpQXDz,CFCjuxSSGIHC,CG8mz55AJWGZ,CGUsb_i8RDwY,CI0c0-rLZXG-,CIw8zwT87DNj,CK9cNlTtfeR0,CKJye66bW4Lv,CKSP9Xt0POxh,CLOSjjoMPDnx,CNwVr903ujnE,CPud3hrRrtdi,CQgVZzbSXe32,CQkOGnrm4PVZ,CR4TjEbjPoUs,CVSBOzsiuve5,CYJiBkDoy-WN,CYex-nEPBjmu,CZMaea2GwAVp,CZpHXgXhTcro,C_tP-avQtZRT,CaDnHbCzpUXp,CaPAyTLjRfeU,Carnp6egAfuP,CbagPv6Uz-6G,Cbhvg6hCE8-d,CdR2H-HOFCLi,Ce7KN-nDY5go,CeGrvN6uqIsw,CfnuS5QiV6s4,Cfry-MrPG7IV,CgiO0EDN8Co_,CkXDsBjhBZXq,ClAncn3GONzH,CmIwhr0qTIoE,CoPbf-jYyky4,CogubjnglMNm,Crb-N1ViL2CP,CrsDrtxlnpnu,CskaWb5-cjGL,CuHWqe6ByC_K,Cw0Hj-4kAV0J,CwXtSB1Ds-6t,CwzujNS2eKev&limit=1000
+1679840081641	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840081730	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840081861	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=Cxf5UxrgJXqI,CyAGihtVuSZr,CypRkUZhFQPH,D0Lq2Bvs1Tj9,D2k0AxHn8wFu,D39LNsBnfK9Z,D4169Xu73EsV,D4nCVWpHQ1h8,D6_tX9W1tS3f,D6t6Tctcs4-x,D8TUWK56YCnL,D9DaJCDCNEo7,D9_NfBbzB-8Y,DA6z5BzVJPNn,DAcH9Swn6sf6,DDQQ3Ci-29fc,DET8P2ZdLRyM,DFAONKQYB96i,DFNmqytgDiQL,DHYi9-N2rrhp,DHcGoc21kjm3,DI2LGupYgUbM,DIWB2NSBBgOK,DIYwC1B__uAr,DJIo6q7sfd98,DL-eHtekAJ2N,DL8FmgIKgbu6,DLb2_iZ4I-R-,DLkP8QloNL5k,DNbqca3SpuMN,DPziIOyDsgAo,DQRJoQM0f6Ng,DRiVMznNyF4n,DSWUtHlY3ddd,DSsfXl6iac-Q,DTntHQXU98mp,DUk7DXixeAXz,DVDADDf95kjE,DVKkwUCHJXKC,DWDfyrMeFgan,DX03xqjniHpy,DY7hKOnSpTP8,DaE5Dkk2Npah,DbfHTprRjG7C,DcABQ2_I7yg7,Dcw8xzKQ6tkW,Dcyic7CLATvz,Dd1xO9rNFgh5,Dd88PLUVz9Rq,DdTrHaMpBNGv&limit=1000
+1679840081903	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840082018	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840082136	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=DfaD0R1VGKJA,Dfx4dEjI9SFF,DgMxao8roXxp,DgfFzBnRybaV,Dk5KO1A9Lzya,DlVTezp66ZEj,DmrF06wGLlLy,Dnp0uNrjwo_D,DoNI-J6s4vWb,Dp0IDSobIiyR,Dp5YoGfOpGpQ,DrFdPEZJ38OP,DuN8Snh61BY-,Du_0wCDxzaWW,DvVpJ8xWxJ4n,DvYhQV0zjRRA,Dwjrukc_zF4Z,DyXIr0eeOYye,E-oHZaXRuLju,E0X_0Zqd17p5,E2n8RcEdGMft,E40h_g2hGDkw,E4rlvvpOc5Aq,E5P600nFToIi,E676sgqcAJSQ,E6p94i_I0O1d,E71YyUKUDSdH,E7n3fF0zjNXd,E80rnbETxGUy,E8eDmDNH1734,E9mNLnAQc2Xx,EALLTIw0rUY_,EAPpIvAbunS-,EBZq5ZyiT5KN,EF1SePXsZ2is,EFFHd76kXZDC,EHXPl8Ppdpl0,EHYdNne9AYbK,EHjlI2V6YRsN,EIzNm1V4bygj,EJ6sBmyLPq8S,EMyAxdECh9Lq,ENYtEZwSI-W9,EPIlCp1fdMq1,EQD-CsEwqQk0,EQVQ3LFIXmIs,ES3juavOhZBP,EZtCGJkHaE46,EdNUS3YMY4T0,EeStYvMlscVa&limit=1000
+1679840082188	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840082287	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840082509	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=EekrUJTDX4Yz,Ef846JkDxEGM,EglqbV0_v-yY,EhbMuMt2Q4vr,Ei9lNkdlZVPw,EiNjNJGanmbN,El4SXDRpBGrA,Em0XLSnhVF8Y,EmCTyiaqffoO,EoVyZaFyeUtf,EoaciymiZ_Iw,EqNQrPRSf87I,Er0kSQFMgDUQ,ErGNOqKpPM-_,Erw8c-qGoGdS,EsPH_K0rE82I,EskiVKAC1Wmr,EuSpfl2_nJVR,EuWMfKmMlcSI,EufRaEukagA7,Ew-fNnm65hq8,Ezb19kDmh222,F1U5jSzHCmwE,F1zztVYiR8zI,F2PKLH1EMcgV,F5gX5BrBXoC9,F6yDM1pqpR_z,F8tE46cUce93,FAiTro4jdOOq,FB6PCMR2kxS1,FC3JxDQBNZxv,FCVIx62lhTnQ,FCt8s5ZFdb60,FDPO_tWg3Ktl,FDe_rm4tAesL,FEZeAJKnNaqF,FHIRByCahtlS,FHM7adr7UIMA,FHcppHIGkwUJ,FISxhHpswggh,FKAlNwJdck5l,FKbWZcXUeVkM,FLEA-bqHRkH7,FM1NUBizOEJH,FM6gaFOSz7wc,FQSWOr_ZCy-y,FQb2WRyVbRDq,FRWaoWJ5W4i3,FXk-4chbrkEs,FY5YVPSiIXXz&limit=1000
+1679840082558	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840082643	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840082761	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=FaqXVMpum6fU,Fbxg3lYCShLa,FcGPW_LxYaz4,FcmGmB73vhU7,FdqZztpzAlLd,Ffau_wJu331N,FgchBG-VWvRd,Fh3_Zz-Y-6Ao,FkUljXzqm5GB,Fk_x5K1ntVUm,Fkm9Q1qsKGnR,FmJ6fK9Nl1ep,FmoDl2CiTxhR,Fnh0gGy7E8SK,FpU7AynnZF3A,FsuSIDauune4,FuIDzLhwgwPL,FuqR5vfmRVx6,Fw3ZiqfYYAzm,FyNr-WUBuBoC,FylLwts2wyIi,FzcOadCWngn6,Fzp-ShOOR_dq,G-oGXUQT6ccn,G1em0uyIRigq,G27ULOiP2QQ_,G4XI3kx-TsWc,G59kvT8ryCB3,G6EKhQgOm1Gb,G80pQHq62bQ8,G8r_Er9t9Mtj,GA1sL8_ut2eM,GALouZb7sXns,GEuezKD9oNf_,GGq_DONV7ueW,GIUGZ5vMWMun,GIx6o55UZ1NZ,GJoPrauul-j0,GKxfF9Q9xkls,GLTKF8F9H2MY,GLb4MLjzN5M1,GPJwUBl1cOJs,GQ-8A0QWRyNM,GQFDGUuKauKY,GRuRrW_EDMlf,GT-1LqGH_Rj0,GTEaTsxg4ZKr,GVc7GgT3W92o,GZNylU93WjA-,G_4Xcu8wJ3W0&limit=1000
+1679840082806	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840082923	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840083125	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=GcdTm-64oOKm,GdPyRFwYa_3h,Gl2GJNDEjgH3,GmFfKYyvVt8V,GmseukHcc3jQ,GnFvmhb9oH48,GnN-Un0QfAbe,GoRe8jcaUupT,GriF2STZe2YK,Grq5y0d3MXbz,GtCiU4k6f-Go,GtXeIQlFOodZ,GukCVjfpyZnh,GuvSdLvMdvey,Gv8Zw_mJKC5V,Gw2V_XhTU03l,Gxjc__j5vo1G,GxkMrKPboree,GypcovvWyKJw,GyuH2UQVBpyb,H0nDQR7Lxa2O,H2nPiBU8qryp,H5IlUKvTFcPp,H5aveQOQBqN-,H5wjbwoKTtKZ,H7S8RJKQ2uJ0,H994ogP_BLCi,H9w8BMYtD59O,HBTXJau5NWPG,HEiAURC8WGUN,HEjysqyDf-Vk,HIZMqpkKKB39,HIor4f_xu1HK,HJEfjM89KvLv,HK13n-ip-r4z,HLRymtM1RCtr,HMQEaz6XAUDM,HOOcBoO_iATu,HRcYkql6JEGN,HTOu4lBN5Bp2,HUScp61yf06j,HVOmUBlEjlHK,HWF22VwgaQjG,HXlmUZY3iQIS,HYTg2iDbCFpt,HZGTRrKJ_bcV,HZxcKC8O9Sk2,H_PqibRB8rB0,HbaFQrtNzfjw,HcE82_DnAzgb&limit=1000
+1679840083166	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840083264	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840083383	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=HcU9WwbiiJt9,HcoWScDmQ-e5,Hdw6jh2VBVzy,HeFE03QbAgfS,Hf2eVoJV6vSD,HiLVBqLzHXzu,HiUEWHUB4th7,Hj6th229SJcN,Hkxy1dPKdUnS,Hn4A9yzbYJvN,Ho4IjUB1C2Um,HpCecTtFscjC,HpJlbt8MY-mJ,Hpkf855-Y6Fa,Hq7VkAYuGEN7,HrMuBms1OJ_A,Hs1KX7OO1EM_,Ht8D3c0UPQBw,HumQLrikeZkA,HuqDqRf9scNt,HvICsKehyGhS,HwC8mm0I3Wiv,HwbyFEIxqZlB,HwzQVbTXb_zq,HydsBOCEdEe0,I0oiS8UOsin7,I3j59IiCK-2A,I4Lwq09tP0W7,I5IBO4H0cgsG,I5qZq2kQB3dy,I6sEFevsWCU7,I7tdVK4np21-,IA2zB6-v8n6L,IADs_cPFlATC,ICTumFRp1_Fk,ICYym0Fzhr5S,IDIjXFQiM15c,IF3As69CWEd_,IH0fwirSpjox,IIUKWCxaSfjJ,IIjds3hxQHMv,IJW951xU1vh9,IKDULBtZ-Naw,IN-qiZF2pWnr,IO8dJ-yDpvJA,IR3G4tUJxncL,IW6VnNWV1qtL,IWYfgLdKDG6n,IY9UKLIGXmRx,IYDboUiT5ZsS&limit=1000
+1679840083453	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840083617	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840083739	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=IYPhKxElr-oJ,IZChw-dYNXxI,IdLlqIQXrzfB,IdxJgwQB0iFW,Iea0v1D3tXIt,IfFtLXiC3glA,IfV5-nEJlyTD,IfotGk1nTa77,IfxUAX91-PBF,Ig6T5o9EOH-J,IgqQWqglbHRN,IiM0VSj2nMjk,IihPXp1gi9_f,Iijbqnm3B0f8,IjStvA8vKb_m,Il0DAw4Rd7oK,IlFWmXKbD0yB,IlWz7CKBxQe8,InUYE5OoF60Q,Inwd52RQc1UC,Iqy0zclQxaGn,Iv3vTP0TBJlT,IvkY3a811EW1,IyosPwGpazl-,J-znH5qsZUSl,J05sidNM3l1H,J09uf9-epUiY,J0S4VJeulyKe,J1qnbjrjaVPA,J6uGxF2Hw9iX,J75fs2td6Dcy,J7F4c0rXsY4b,J7JK00u3RCtU,J7gduTnLYJKh,J7m5u0clfDrt,J9p8UCT1i65h,JAiac-LV8NXw,JBMMQsCGaVn3,JE35sBiXHTw8,JE_-ZxafBXzc,JF3ndhPuHCby,JGPiB0peIjpP,JGa9crfwfXSd,JImUIj6WuZEA,JJYfdb4H64QT,JMgklY-nA0gB,JQcd-SPxVLac,JS-iX6CKlQv_,JT1hrAoOrcOU,JT3xKY5IlBFO&limit=1000
+1679840083796	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840083878	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840084045	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=JTUusQOO4LeV,JUoP97pkBS14,JXympgbHL4aO,JYNAxrmcM9nr,JZI6_8cUb-f1,J_2v0CxSW2NV,J_TVsakF74BX,J_e2wgwtwi5T,JbARe_y2V4QJ,Jc1gOfZQa_wY,Jc7lKgAqUrBl,JdRxqROBVHJ8,JehJoBSqz_-j,JfrZDVuXtA4n,JhQfKvvHMT8k,Ji5JgjlHpehx,Jib1e5NsRZTo,JkWPb7PVTwIK,JkyxYDfCczFA,JlRgIjK5TtTx,JlptHSfQcWEF,JlqxZg0SQIJH,JmvNkeqv-7nZ,JpA9CZqZApXZ,JpUs58qSRXCN,JqDZ12zzqRLv,JrQslXzM5aQm,JrfElmvkfjXh,JtZ7IQQo0EwI,Jto4I_kl-VjY,JvOdXFHr01Ip,JviRX5zHC-O-,Jz6dJQTvn3V4,K1DISC8U7NL3,K1Kclnco5KQa,K1StG_VpR9hb,K1wh3vIYCkpZ,K467kzitZ7E5,K7ROl7l30AB-,K7ZPiKCT5oSK,K8Mjz1Sa29fz,KBobrtamZv0B,KEJ93gOXFcXe,KIUm00Lpvy_w,KJ8vXGtdsGst,KJxbMFw0VVM8,KKHMAGkjMgVe,KKbod9BCJOHD,KKoHX9HNb-ct,KL_d7JN1loQZ&limit=1000
+1679840084087	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840084168	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840084284	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=KMf4mdZVXuaz,KNqiGyBlTNJO,KNwskTWMbKUa,KOMneMK2T7n8,KVuTZIOcUyhQ,KW7Zy3S05nE0,KWYdYaRbJS6Q,KWrLpVjzzpGe,KX6HeiqJ9Lym,KY8NCx8Fzj09,K_36_zLkVxkI,Ka-ZWELFdr_w,KatnTx19rCHU,Kav6FwEvELqj,Kbn5XmJ-3Epa,KcGg3FSxH6WR,KdvCZTNaS1BB,Ke-HxRUHC9qp,KgLJLfwRzD_w,KhEXCxHq0rg7,KiEPEHG34qnW,KiN_HyLOwi0H,KjVdIGKyhjIg,Kkvc1-gvnpxk,KlK9zE2UuEtx,KllHi5RnkW8t,KmOOdNtV0dBf,KmUfjVpLKee0,Ko5F6OZj21ey,KoYQoXyS2WSP,Kq_8VIugF_fg,KqiZ0g3sqV9I,KreOakSVFqBO,Kt3BYj6-zKLM,KuRNtj2nWia4,KvNeRdkZhCJC,KwW__vB-is9-,KxenX908KLmE,Ky-j0YDjfu9i,Ky77moVI6aJ8,Ky8XbX3V7_xI,KyBmayDzfXoc,KyaHK4LOqBdx,KzsNAEgsv2M3,L-k4tFDlnnqU,L0EaoaLplU2L,L0cDKjhw3FLH,L3Xcux-m1Iwh,L3d6SOsE8gA_,L6Bo5O6GDReM&limit=1000
+1679840084339	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840084419	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840084556	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=L7dgrKtCgi_E,L95azGMAhQ5A,LAYmWnXXsZ3m,LCCTxnaEwK3H,LCLBM09hBrki,LDFvVuR-em27,LESFbAfntKTe,LEessPtudvUe,LGK0gt2RqgSM,LGYof0_9tMXO,LKTkzWR6fZUt,LL5NMBlhgcGG,LLOVhAy7X9mb,LMzonKKgqL80,LNJc7p2i0KR9,LNasdrGmCplq,LO2eHrW0Kjca,LOfBFp2EycZQ,LR77RexQ4Rq_,LRYdn40UKKz8,LSm180G-zRGt,LTHikRjfvmg8,LTU1VehnVp3V,LTqPlS4IVn_A,LUDsukKuyVBJ,LWQsoH4sbDiU,LX52dLJeNkvM,LYM4r4cD6wRe,LYhB7iSkYgME,L_5WWljXj5IU,L_Z1kqGG-TLz,Lb6B2sFHx8ew,LbQVyuEfoCi9,LbWcMf962P_6,Lb_NKFvpg03L,Lbfwyhy6xcL1,Lcfol-5WmN9I,LeJ6Qbjgtsoq,LfQeCt60tvm_,LfSDJHrjRy0r,LffblYjphJLN,LgB12NWx59o6,LgPy4tAcPhQD,LkTndPWvGGuA,LkelsVPNQSzt,LmvjqlFWvBp-,LnBPyrm2Vp4v,LoPjY-l4u6CR,LoaB5xaUmCGO,LocqeBr-wtz5&limit=1000
+1679840084613	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840084749	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840084874	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=Lor9bEK6tNxI,LsgMTiAIojiq,Lvu7uSSXEF7u,LwQtO29i2Lj9,LwwW7WNYSKhl,M-SUfA7XoN32,M-cZGJooqQHs,M1MqwNp5kOYq,M2BZ0g69J_pe,M4Yv308_o1Kj,M4v1hQkP72lg,M5Pujp8G4yTE,M5s8gmsB5Hxb,M6PuW58tkhok,M8I6HR0Mqb9U,M8a66R9_PFy3,M9-clcmmu76J,M9BmJZKyapV3,M9RxzgEMArzZ,M9_d4SdUOZRD,M9npMSfGftuM,M9oEEwdf0In2,M9s25f6K0VdG,MA8LGF71pRfC,MB7pyHsYNUCv,MB_OBq6EsoLN,MCWnWTQStGY0,MDZSFuAnWS5o,MDjq8R9sVSLu,MDx0_9wNE1_C,MEDsf8yGMt83,MGCtwR_MlsoJ,MGYxzOamIWmX,MGdJ-hIMfvhe,MH4JwoHeCyEu,MHDhM1LWihKb,MHHWQKA8zf_u,MHVKUAb4W7Nz,MIfQGtQfU37w,MIr_Fmg-hv2H,MLtI8XBLt-uh,MM_GyBKWFwqc,MMh393DAqbRF,MPExdD5bfqCF,MS7uLqrw4B6M,MScwAgRQh73Y,MTC57RDBXKpQ,MVHqCF6tyS_P,MXXruQvfHJJE,MYEv_HMkOiu8&limit=1000
+1679840084988	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840085141	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840085264	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=MYphxDWBgViY,MZOYT4UI8nW0,MZv4_KCzl1QW,M_A-UBONjK8h,M_ezHMxYThN-,MaUuUgqtATbI,MacWoC3Qwq4O,Mba6GhTZk9l1,Md1sHDV6MfOn,Mf2j5O9D5_wC,MiuTCGSTuHrl,MkYoJx7IEdKi,MlAzjWYuUb1V,MoXZlPW4n_1u,Mogg3Jw2ueIz,MqJy7dXhzOPM,MqKy2dhhVE5R,MroAxS-3VfqA,MtjyJtn8ljjh,Mu13pk_JXzbd,Mul6aj6emdsS,Mv_VfrCS0VHq,Mwa5tKozVFpx,MwaYsnwout3v,Mwjw0ytrYr5c,Mwo_Hy_9RyVy,MyuBQUyNxlnQ,N-Qui-pV_zAS,N1fcOCLOSLgv,N2g3n5vHRuAr,N2jJPXFZFY_n,N4J3p_EWlSKW,N4pztHt5ejiM,N6rR-8nXH3kK,N7Xx-1gEeDFY,N86zv93J473N,N9BHCYpMl7O2,N9dNwheYCwKc,N9qZ7K7uH_gF,NAfglt4Nq7oa,NCd0mv_2Inxl,NFO2xqwZfR9d,NFg7b-A73kme,NKVvCRR59R8T,NKs6GqfSSBCA,NLQx25glJah0,NM1EIBLbTQg4,NOE-g46h3uNq,NONhthj_EVBB,NP25MO_57m28&limit=1000
+1679840085319	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840085399	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840085583	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=NQCP8uR_sYQQ,NRuEt7zn197L,NU2ovBVtBDO-,NWdsfFVNFj6q,NXNArjlHxHVq,NXwDEg5SXWqx,NY575Lyy0Afc,NZPMbrUp-ogr,NaZtm3UwFcO7,NaraF8QDIfud,NbbadHijEwAm,NbbhCodAIsh8,NbuHErBvF4Uu,NeRauyq58_GG,NeuIsH5-NXuW,NfQIgXbKUyRM,NfmbXMlCSm3J,NhwxNRLIOFin,NiAjprx91izF,NiVmzItVwIaR,Njp59IGovEQS,NkZ9O0k9zneP,NkvMgP-tjYgT,NlKhnbghcs8k,NlghkTeHNWnK,NmUIn9s2ih9b,NpdAmD04wc5u,Nslhiyz3F_ek,NuA5qcxk19aS,Nub1mbDBeYs3,NwkoRUq4SNnW,NxFCB5ZFOp9L,O-3psLAt577r,O-4NnnIwneWk,O07W5Gq_xBCS,O0LZATeoVIFG,O1dgt1QMh1vJ,O1lKL4ztStrZ,O2A3DhjOd5dT,O2Y2nhejcOAA,O2stS4Gi74h2,O3PKD5Y7U4zq,O3ex50JuKURP,O4mLHHEeuV99,O60H6l52EWGT,O6LqjhyIjNyQ,O6adHIs7gfII,O6j_0ZG_7bwm,O8HKmxdcRxuu,O95NispgF6h5&limit=1000
+1679840085619	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840085687	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840085830	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=O9QjLzG2NziP,OBl5nzrrnUHL,OCcUuAS4CVdU,OCj1gpKJceJH,OCkvtOQ7yVAN,OCo330ftKINl,OCzAUJ2sWQ-l,OD8CuA-JDAJM,ODYfbJSAUXjw,OE26gy0k1r8z,OEI3GzhMY7Qw,OEoPFcrLkU0I,OEtZeZtwWjfm,OFgM86Z4Iq2V,OFxqhswWbopa,OIrV1dvMGPML,OJdpnkstpZ4j,OMhLEUW9KYLq,OOKfZtZ8Xm2D,OOlQ9g4K1UC-,OP8_uUbGJbW8,OQxOP8s3Mkou,OR0OLzxx2E-5,OTrjFvlvGPUf,OY1vU5-U6xao,OY6jIy4C-N8t,OZon3N-m65eL,OZwFm6QXgV_9,OaSH-MXVbmnk,ObwFUJj1QNPM,Ocd8Uknm4FZW,OfPN69fz9m8n,Ofp5lxDpY5B3,OhdaF0Br3lpJ,OibkWh9siwud,OidZB0Zm5AbX,OjGFchSW2NdH,OjKMObHGMK0u,Oj_hNa-svGt_,OjciJ0FASsYm,OkbE0V90Bm3U,OlL-OIJbtK_L,OpyVZ_ladYGC,OqIiSJEbPlrS,OqnvhXdWW5xk,OroVyqA7OCqq,OsS1eA96a8XU,OtuLchJbKBOO,OulnsYvQ6EYE,OvbNPL0EHL7S&limit=1000
+1679840085901	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840086009	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840086196	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=Ovbuo2E_OxeY,Ovnq3eydTGsg,OwHGITIAuXKW,OwyV8M4GI6Ej,OxQ96S20NA9q,OxcVioSreE1k,Oza0r3Kljs0D,P0K-qYgs3ba1,P22kRgNtkn42,P2rrhYC1GXGu,P2tZBFJlUH-o,P39TEUJjLpqb,P3fbzZlYSgoj,P52SJm-hdhkk,P5Jsd7z-_IVX,P5WG7bupM5Tg,P5pNmbYStLv9,P79JCg1bMJsn,P7vKHISOV3YH,PAgT38Caz5-i,PDGxd92P-wqE,PDk03BI4Vgbe,PExBtqX_TNED,PFCvYKca1nEy,PFFNXxuS92PS,PFGGCwOJ7_c7,PG0iS5fXjh7-,PHDkTinEEgYH,PHH8mOGBnVNa,PHJ8owE0QebI,PKGYk2qx8dMq,PKaxDtOqRCKP,PKpHNpqx-m3z,PMM8COOCifsP,PN1Ytxr-LoyZ,POn6NtvmNdD7,PPPJGzNEAvP4,PQx-ia_ilrYD,PRJanIQ5A8WB,PRgSlhM9FNic,PSWTDplQOt-S,PSdCqdc9_HYF,PUm8X8cyQ6fr,PVWd866DuveQ,PVu6Q0DdOgOR,PXV-AZ6DYJGn,QU75ARg6AH7U,SzuRImxghLUj,T_RrkXcuoMrW,U2Ivpfl_hn-_&limit=1000
+1679840086248	Sync.Engine.History.Store	DEBUG	adding 50 records to history
+1679840086327	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840086508	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?full=1&sort=newest&ids=USpICl90fl6y,UeC_s8mt0RCR,Uph1TgRUhBTT,VderRejB-86L,bSbAASyIG2_6,cPjPMyufGdVB,da7nGe6fNzzJ,dcC_I27ziqbL,eCad0dc-RrEv,fwMZb9ptzjYJ,fwj0Vahvgemg,gLMITQe66YKi,hIhvgAZE2q0j,hf1UlfnvjJbm,hykpAxyA9kGH,k6mga55e9tA2,kEhVOMIXS4nr,kw5v5ETwmOmI,mC8qmy0vlx6d,maeBb27-4o4y,nU9WQ4g5rIbD,nZznqDg8a-ak,oZqAnixCSMzA,qRGuJlQbQia9,rgxmrpPTpvkX,sznTxogBTmfN,u81kWhOtFqNQ,uNxcjoiKZw5X,vuNOQY9ItYSs,xTf5AAU5p_sC,y3PVdeUAnHFl,zVZp0zgm3fJy,zmewVdzIFFkH&limit=1000
+1679840086624	Sync.Engine.History.Store	DEBUG	adding 32 records to history
+1679840086713	Sync.Engine.History	INFO	Records: 3478 applied, 3478 successfully, 0 failed to apply, 0 newly failed to apply, 5 reconciled.
+1679840086713	Sync.Engine.History	INFO	Uploading 4 outgoing records
+1679840086736	Sync.Engine.History	INFO	Posting 4 records of 1922 bytes with batch=true
+1679840086737	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1679840086738	Sync.Collection	DEBUG	POST Length: 1922
+1679840087013	Sync.Collection	DEBUG	POST success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/storage/history?batch=true&commit=true
+1679840087017	Sync.Engine.Extension-Storage	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1679840087018	Sync.Engine.Extension-Storage	INFO	Uploading 0 outgoing records
+1679840087019	Sync.Doctor	INFO	Skipping check of prefs - disabled via preferences
+1679840087019	Sync.Doctor	INFO	Skipping check of passwords - disabled via preferences
+1679840087019	Sync.Doctor	INFO	Skipping check of tabs - disabled via preferences
+1679840087019	Sync.Doctor	INFO	Skipping check of bookmarks - disabled via preferences
+1679840087019	Sync.Doctor	INFO	Skipping check of addons - disabled via preferences
+1679840087019	Sync.Doctor	INFO	Skipping check of addresses - disabled via preferences
+1679840087019	Sync.Doctor	INFO	Skipping check of creditcards - disabled via preferences
+1679840087019	Sync.Doctor	INFO	Skipping check of forms - disabled via preferences
+1679840087019	Sync.Doctor	INFO	Skipping check of history - disabled via preferences
+1679840087019	Sync.Doctor	INFO	Skipping check of extension-storage - disabled via preferences
+1679840087019	Sync.Doctor	INFO	Skipping validation: no engines qualify
+1679840087019	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1679840087019	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1679840087020	Sync.Synchronizer	INFO	Sync completed at 2023-03-26 10:14:47 after 38.79 secs.
+1679840087020	Sync.Declined	DEBUG	Handling remote declined: []
+1679840087020	Sync.Declined	DEBUG	Handling local declined: []
+1679840087020	Sync.Declined	DEBUG	Declined changed? false
+1679840087021	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1679840087022	Sync.SyncScheduler	WARN	Resync attempt 2 exceeded maximum 1
+1679840087022	Sync.SyncScheduler	DEBUG	Next sync in 90000 ms. (why=schedule)

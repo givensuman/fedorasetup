@@ -1,0 +1,86 @@
+{
+	"name": "vscode-rive-viewer",
+	"displayName": "vscode-rive-viewer",
+	"description": "A simple viewer for riv files.",
+	"publisher": "ronba",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ronba/vscode-rive-viewer"
+	},
+	"version": "0.2.0",
+	"engines": {
+		"vscode": "^1.59.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:rive-viewer.rivView",
+		"onCustomEditor:riveViewer.rivView"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"configuration": {
+			"title": "RiveViewer",
+			"properties": {
+				"riveviewer.externalDirectories": {
+					"type": "array",
+					"default": [],
+					"description": "List of directories in addition to the current workspace from which the extension is allowed to display .riv files."
+				}
+			}
+		},
+		"customEditors": [
+			{
+				"viewType": "riveViewer.rivView",
+				"displayName": "Rive Viewer",
+				"selector": [
+					{
+						"filenamePattern": "*.riv"
+					}
+				],
+				"priority": "default"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"test-compile": "tsc -p ./",
+		"test-watch": "tsc -watch -p ./",
+		"pretest": "npm run test-compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "^12.12.0",
+		"@types/vscode": "^1.32.0",
+		"@typescript-eslint/eslint-plugin": "^4.16.0",
+		"@typescript-eslint/parser": "^4.16.0",
+		"eslint": "^7.21.0",
+		"glob": "^7.1.7",
+		"gts": "^3.1.0",
+		"mocha": "^8.4.0",
+		"rive-js": "^0.7.27",
+		"ts-loader": "^7.0.5",
+		"typescript": "^4.3.5",
+		"vscode-test": "^1.5.2",
+		"webpack": "^5.51.1",
+		"webpack-cli": "^4.8.0"
+	},
+	"__metadata": {
+		"id": "320a78a9-5d43-4f93-8151-0d9ee16c0688",
+		"publisherId": "fcc75b49-2a27-4bbb-908c-ed44a6f8ab1f",
+		"publisherDisplayName": "ronba",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1679867364547,
+		"preRelease": false
+	}
+}

@@ -1,0 +1,44 @@
+1680188820982	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1680189142294	Sync.Service	DEBUG	User-Agent: Firefox/111.0.1 (Linux x86_64) FxSync/1.113.0.20230323121228.desktop
+1680189142294	Sync.Service	INFO	Starting sync at 2023-03-30 11:12:22 in browser session zluVQWjn3X1G
+1680189142294	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1680189142297	Sync.Status	INFO	Resetting Status.
+1680189142297	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1680189142297	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1680189142297	FirefoxAccounts	DEBUG	getOAuthToken enter
+1680189142303	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1680189142303	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1680189142305	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1680189142772	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1680189143729	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1680189143795	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1680189143886	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1680189144380	Sync.RemoteTabs	INFO	Generating tab list with filter
+1680189144386	Sync.RemoteTabs	DEBUG	Processing client: {"id":"-IwfFHV5Ky9_","type":"client","name":"given’s Firefox on root","clientType":"desktop","lastModified":1679803764670,"tabs":[]}
+1680189144386	Sync.RemoteTabs	DEBUG	Processing client: {"id":"5158bc15c56f7690c29aa11e1f36df72","type":"client","name":"Firefox on iPhone","clientType":"phone","lastModified":1680064876050,"tabs":[]}
+1680189144387	Sync.RemoteTabs	DEBUG	Processing client: {"id":"7fvgEQC6dNNA","type":"client","name":"given’s Firefox on DESKTOP-6CLMDAO","clientType":"desktop","lastModified":1678743664290,"tabs":[]}
+1680189144387	Sync.RemoteTabs	DEBUG	Processing client: {"id":"oarRC8s3bk0B","type":"client","name":"given’s Firefox on fedora","clientType":"desktop","lastModified":1679630364760,"tabs":[]}
+1680189144387	Sync.RemoteTabs	INFO	Final tab list has 4 clients with 13 tabs.
+1680189146846	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1680189147248	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1680189147800	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1680189148760	Sync.Engine.Tabs	INFO	Uploading 1 outgoing records
+1680189148765	Sync.Engine.Tabs	INFO	Posting 1 records of 1175 bytes with batch=true
+1680189148766	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1680189148768	Sync.Collection	DEBUG	POST Length: 1175
+1680189148917	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1680189148966	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1680189153919	Sync.Engine.Tabs	INFO	Can't do a quick-write as another tab sync is in progress
+1680189160025	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1680189160415	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1680189161360	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1680189161425	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1680189165026	Sync.Engine.Tabs	INFO	Can't do a quick-write as another tab sync is in progress
+1680189182417	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change: scheduling a quick-write in 5000ms
+1680189183540	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but a quick-write is already scheduled
+1680189183628	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/199676341/info/collections failed: [Exception... "The connection has timed out"  nsresult: "0x804b000e (NS_ERROR_NET_TIMEOUT)"  location: "<unknown>"  data: no] No traceback available
+1680189183628	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1680189183628	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1680189183629	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The connection has timed out"  nsresult: "0x804b000e (NS_ERROR_NET_TIMEOUT)"  location: "<unknown>"  data: no] No traceback available
+1680189183631	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1680189183639	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "The connection has timed out"  nsresult: "0x804b000e (NS_ERROR_NET_TIMEOUT)"  location: "<unknown>"  data: no] No traceback available
